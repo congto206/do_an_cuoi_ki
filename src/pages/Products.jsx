@@ -145,6 +145,33 @@ const Products = () => {
           box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
           border-right: 2px solid #ddd;
         }
+                    /* Hiệu ứng rung nhẹ liên tục */
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+              transform: scale(1.02);
+              box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+              transform: scale(1);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          .product-card {
+            animation: pulse 3s infinite ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
+
+          /* Kết hợp hiệu ứng hover */
+          .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            animation: none;
+          }
+
 
         .product-content {
           margin-left: 20%;
