@@ -83,6 +83,7 @@ const SplitAC = () => {
 
       <style>
         {`
+          
         /* Để nội dung không bị che mất bởi Navbar */
 .content-container {
   padding-top: 80px; /* Điều chỉnh khoảng cách xuống dưới */

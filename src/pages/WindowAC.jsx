@@ -82,6 +82,7 @@ const WindowAC = () => {
 
             <style>
                 {`
+                
                 .content-container {
                     padding-top: 80px; /* Điều chỉnh khoảng cách xuống dưới */
                     }
