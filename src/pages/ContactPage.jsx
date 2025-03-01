@@ -5,8 +5,73 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 const ContactPage = () => {
   return (
     <>
+      <style>
+        {`
+          .custom-navbar {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+          }
+          .contact-container {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+          }
+          .section-title {
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          .contact-form {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          .form-title {
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+          }
+          .contact-info div {
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+          }
+          .contact-info div:hover {
+            background: rgba(0, 123, 255, 0.1);
+          }
+          .location-title {
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          .form-control {
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+          }
+          .btn-custom {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            width: 100%;
+          }
+          .btn-custom:hover {
+            background-color: #218838;
+          }
+        `}
+      </style>
+      
       {/* Thanh Menu */}
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
         <Container>
           <Navbar.Brand href="/">Bán Điều Hòa</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,27 +92,27 @@ const ContactPage = () => {
         </Container>
       </Navbar>
 
-      <Container className="mt-5">
-        <h2 className="text-center mb-4">Liên hệ chúng tôi</h2>
+      <Container className="mt-5 contact-container">
+        <h2 className="text-center section-title">Liên hệ chúng tôi</h2>
 
         {/* Form Nhập Thông Tin */}
         <Row className="mb-5">
-          <Col md={{ span: 8, offset: 2 }}>
-            <h5>Gửi tin nhắn cho chúng tôi</h5>
+          <Col md={{ span: 8, offset: 2 }} className="contact-form">
+            <h5 className="form-title">Gửi tin nhắn cho chúng tôi</h5>
             <Form>
               <Form.Group controlId="formName" className="mb-3">
                 <Form.Label>Họ và tên</Form.Label>
-                <Form.Control type="text" placeholder="Nhập họ và tên của bạn" />
+                <Form.Control type="text" placeholder="Nhập họ và tên của bạn" className="form-control" />
               </Form.Group>
               <Form.Group controlId="formEmail" className="mb-3">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Nhập email của bạn" />
+                <Form.Control type="email" placeholder="Nhập email của bạn" className="form-control" />
               </Form.Group>
               <Form.Group controlId="formMessage" className="mb-3">
                 <Form.Label>Tin nhắn</Form.Label>
-                <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" />
+                <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" className="form-control" />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button className="btn-custom" type="submit">
                 Gửi
               </Button>
             </Form>
@@ -56,32 +121,30 @@ const ContactPage = () => {
 
         {/* Google Map và Thông Tin Liên Hệ */}
         <Row>
-          {/* Google Maps */}
           <Col md={6} className="text-center">
-            <h5 className="text-center">Hà Nội</h5>
+            <h5 className="location-title">Hà Nội</h5>
             <iframe
               title="Bản đồ"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.985287588934!2d105.77949717609838!3d21.032185780614374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab36f62c235f%3A0x868c008e1c842b02!2zOEEgxJDGsOG7nW5nIFRo4bq_dCBUaHV54buFLCBN4bu5IMSQw6xuaCwgQ-G7lWkgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3Q!5e0!3m2!1svi!2s!4v1709200000000!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?..."
               width="100%"
               height="350"
-              style={{ border: 0 }}
+              style={{ border: 0, borderRadius: '10px' }}
               allowFullScreen=""
               loading="lazy"
             ></iframe>
           </Col>
 
-          {/* Thông Tin Liên Hệ */}
-          <Col md={6} className="d-flex flex-column justify-content-center">
+          <Col md={6} className="d-flex flex-column justify-content-center contact-info">
             <div className="mb-4">
-              <FaPhone size={30} className="me-2" />
+              <FaPhone size={25} className="me-3 text-primary" />
               <strong>Điện thoại:</strong> +84 123 456 789
             </div>
             <div className="mb-4">
-              <FaEnvelope size={30} className="me-2" />
+              <FaEnvelope size={25} className="me-3 text-danger" />
               <strong>Email:</strong> support@maylanh.com
             </div>
             <div>
-              <FaMapMarkerAlt size={30} className="me-2" />
+              <FaMapMarkerAlt size={25} className="me-3 text-success" />
               <strong>Địa chỉ:</strong> 8A Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội 100000, Việt Nam
             </div>
           </Col>
