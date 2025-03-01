@@ -99,14 +99,13 @@ const Home = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div style={{ ...styles.banner, backgroundImage: "url('/images/banner1.jpg')" }}>
+          <div style={{ ...styles.banner, backgroundImage: "url('/images/banner2.jpg')" }}>
             <div style={styles.bannerOverlay}></div>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div style={{ ...styles.banner, backgroundImage: "url('/images/banner3.jpg')" }}>
             <div style={styles.bannerOverlay}></div>
-            <h1 style={styles.bannerText}>Sản phẩm mới về! 🛒</h1>
           </div>
         </Carousel.Item>
       </Carousel>
