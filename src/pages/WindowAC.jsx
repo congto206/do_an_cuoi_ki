@@ -27,21 +27,10 @@ const WindowAC = () => {
     };
 
     const products = [
-        { id: 1, name: "Daikin Inverter 1.5 HP", category: "window", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-        { id: 2, name: "Panasonic Inverter 1HP", category: "window", image: "/images/panasonic-1hp.jpg", price: "$450" },
-        { id: 3, name: "LG DualCool 2HP", category: "window", image: "/images/lg-2hp.jpg", price: "$600" },
-        { id: 4, name: "Mitsubishi Electric 2 HP", category: "window", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-        { id: 5, name: "Toshiba Inverter 1HP", category: "window", image: "/images/toshiba-1hp.jpg", price: "$430" },
-        { id: 6, name: "Daikin Inverter 1.5 HP", category: "window", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-        { id: 7, name: "Panasonic Inverter 1HP", category: "window", image: "/images/panasonic-1hp.jpg", price: "$450" },
-        { id: 8, name: "LG DualCool 2HP", category: "window", image: "/images/lg-2hp.jpg", price: "$600" },
-        { id: 9, name: "Mitsubishi Electric 2 HP", category: "window", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-        { id: 10, name: "Toshiba Inverter 1HP", category: "window", image: "/images/toshiba-1hp.jpg", price: "$430" },
-        { id: 11, name: "Daikin Inverter 1.5 HP", category: "window", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-        { id: 12, name: "Panasonic Inverter 1HP", category: "window", image: "/images/panasonic-1hp.jpg", price: "$450" },
-        { id: 13, name: "LG DualCool 2HP", category: "window", image: "/images/lg-2hp.jpg", price: "$600" },
-        { id: 14, name: "Mitsubishi Electric 2 HP", category: "window", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-        { id: 15, name: "Toshiba Inverter 1HP", category: "window", image: "/images/toshiba-1hp.jpg", price: "$430" },
+        { id: 1, name: "Máy lạnh tủ đứng Samsung Inverter 5 HP AC048BNPDKC/TC 3 Pha", category: "window", image: "/images/maylanhcua1.jpg", price: "$500" },
+        { id: 2, name: "Máy lạnh tủ đứng LG Inverter 4 HP ZPNQ36LR5A0 (3 Pha)", category: "window", image: "/images/maylanhcua2.jpg", price: "$450" },
+        { id: 3, name: "Máy lạnh tủ đứng Samsung Inverter 4 HP AC048BNPDKC/TC 3 Pha", category: "window", image: "/images/maylanhcua3.jpg", price: "$600" },
+
     ];
 
     return (

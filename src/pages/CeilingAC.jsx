@@ -27,21 +27,13 @@ const CeilingAC = () => {
     };
 
   const products = [
-    { id: 1, name: "Daikin Inverter 1.5 HP", category: "ceiling", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-{ id: 2, name: "Panasonic Inverter 1HP", category: "ceiling", image: "/images/panasonic-1hp.jpg", price: "$450" },
-{ id: 3, name: "LG DualCool 2HP", category: "ceiling", image: "/images/lg-2hp.jpg", price: "$600" },
-{ id: 4, name: "Mitsubishi Electric 2 HP", category: "ceiling", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-{ id: 5, name: "Toshiba Inverter 1HP", category: "ceiling", image: "/images/toshiba-1hp.jpg", price: "$430" },
-{ id: 6, name: "Daikin Inverter 1.5 HP", category: "ceiling", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-{ id: 7, name: "Panasonic Inverter 1HP", category: "ceiling", image: "/images/panasonic-1hp.jpg", price: "$450" },
-{ id: 8, name: "LG DualCool 2HP", category: "ceiling", image: "/images/lg-2hp.jpg", price: "$600" },
-{ id: 9, name: "Mitsubishi Electric 2 HP", category: "ceiling", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-{ id: 10, name: "Toshiba Inverter 1HP", category: "ceiling", image: "/images/toshiba-1hp.jpg", price: "$430" },
-{ id: 11, name: "Daikin Inverter 1.5 HP", category: "ceiling", image: "/images/daikin-1.5hp.jpg", price: "$500" },
-{ id: 12, name: "Panasonic Inverter 1HP", category: "ceiling", image: "/images/panasonic-1hp.jpg", price: "$450" },
-{ id: 13, name: "LG DualCool 2HP", category: "ceiling", image: "/images/lg-2hp.jpg", price: "$600" },
-{ id: 14, name: "Mitsubishi Electric 2 HP", category: "ceiling", image: "/images/mitsubishi-2hp.jpg", price: "$520" },
-{ id: 15, name: "Toshiba Inverter 1HP", category: "ceiling", image: "/images/toshiba-1hp.jpg", price: "$430" },
+    { id: 1, name: "Máy lạnh âm trần LG Inverter 2 HP ZTNQ18GPLA0", category: "ceiling", image: "/images/sanphamamtuong1.jpg", price: "$500" },
+    { id: 2, name: "Máy lạnh âm trần 1 hướng LG Inverter 1.5 HP ZTNQ12GULA0", category: "ceiling", image: "/images/sanphamamtuong2.jpg", price: "$450" },
+    { id: 3, name: "Máy lạnh âm trần 1 hướng LG Inverter 2.5 HP ZTNQ24GTLA0", category: "ceiling", image: "/images/sanphamamtuong3.jpg", price: "$600" },
+    { id: 4, name: "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA (3 Pha)", category: "ceiling", image: "/images/sanphamamtuong4.jpg", price: "$600" },
+    { id: 5, name: "Máy lạnh âm trần 1 hướng LG Inverter 2 HP ZTNQ18GTLA0", category: "ceiling", image: "/images/sanphamamtuong5.jpg", price: "$600" },
+    { id: 6, name: "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA", category: "ceiling", image: "/images/sanphamamtuong6.jpg", price: "$600" },
+
 ];
 
 return (
