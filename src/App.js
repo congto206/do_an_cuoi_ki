@@ -8,6 +8,7 @@ import CeilingAC from "./pages/CeilingAC";  // Điều hòa âm trần
 import SplitAC from "./pages/SplitAC";      // Điều hòa treo tường
 import WindowAC from "./pages/WindowAC";    // Điều hòa cửa sổ
 import ContactPage from "./pages/ContactPage"; // Trang liên hệ
+import About from "./pages/about"; // Trang liên hệ
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
           <Route path="/products/window" element={<WindowAC />} />
           {/* Trang liên hệ */}
           <Route path="/contact" element={<ContactPage />} />
+          {/* Trang Gioi thieu */}
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </CartProvider>

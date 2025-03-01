@@ -17,7 +17,7 @@ const NavbarComponent = () => {
                 <NavDropdown.Item href="/products/ceiling">Điều hòa âm trần</NavDropdown.Item>
                 <NavDropdown.Item href="/products/window">Điều hòa cửa sổ</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">Giới thiệu</Nav.Link>
+              <Nav.Link href="/about">Giới thiệu</Nav.Link>
               <Nav.Link href="/contact">Liên hệ</Nav.Link>
             </Nav>
           </Navbar.Collapse>
