@@ -12,10 +12,10 @@ const categoryIcons = {
 };
 
 const categories = [
-  { key: "best", title: "🔥 Điều hòa bán chạy nhất" },
-  { key: "window", title: "🏠 Điều hòa cửa sổ" },
-  { key: "split", title: "❄ Điều hòa treo tường" },
-  { key: "ceiling", title: "🏢 Điều hòa âm trần" },
+  { key: "best", title: " Điều hòa bán chạy nhất" },
+  { key: "window", title: " Điều hòa cửa sổ" },
+  { key: "split", title: " Điều hòa treo tường" },
+  { key: "ceiling", title: " Điều hòa âm trần" },
 ];
 
 const products = [
@@ -97,7 +97,7 @@ const Products = () => {
       <NavbarComponent />
       <div className="products-container">
         <div className="sidebar">
-          <h4 className="text-center text-black fw-bold py-3">📌 Danh mục sản phẩm</h4>
+          <h4 className="text-center text-black fw-bold py-3"> Danh mục sản phẩm</h4>
           <ListGroup variant="flush">
             {categories.map(({ key, title }) => (
               <ListGroup.Item key={key} action className="sidebar-item" onClick={() => document.getElementById(key).scrollIntoView({ behavior: "smooth" })}>
@@ -108,7 +108,7 @@ const Products = () => {
         </div>
 
         <Container className="mt-4 product-content">
-          <h2 className="text-center text-primary fw-bold">❄️ Danh sách điều hòa ❄️</h2>
+          <h2 className="text-center text-primary fw-bold"> Danh sách điều hòa </h2>
           {categories.map(({ key, title }) => (
             <ProductSection key={key} title={title} category={key} />
           ))}

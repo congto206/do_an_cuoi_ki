@@ -37,7 +37,7 @@ const WindowAC = () => {
         <>
             <NavbarComponent />
             <Container className="mt-4">
-                <h2 className="text-center text-primary fw-bold">🏢 Điều hòa cửa sổ</h2>
+                <h2 className="text-center text-primary fw-bold"> Điều hòa cửa sổ</h2>
                 <Row className="mt-4">
                     {products.map((product) => (
                         <Col key={product.id} lg={4} md={6} sm={12} className="mb-4">
