@@ -15,16 +15,17 @@ const SidebarComponent = () => {
 
   return (
     <div className="sidebar">
-      <h4 className="text-center text-light fw-bold py-3">📌 Danh mục sản phẩm</h4>
+      <h4 className="text-center fw-bold py-3">📌 Danh mục sản phẩm</h4>
       <ListGroup variant="flush">
         {menuItems.map((item) => (
           <ListGroup.Item
             key={item.id}
             action
             onClick={() => navigate(`#${item.id}`)}
-            className="sidebar-item"
+            className="sidebar-item d-flex align-items-center"
           >
-            {item.icon} {item.label}
+            <span className="icon">{item.icon}</span>
+            <span className="label">{item.label}</span>
           </ListGroup.Item>
         ))}
       </ListGroup>
@@ -35,22 +36,42 @@ const SidebarComponent = () => {
           position: fixed;
           top: 0;
           left: 0;
-          width: 30%;
+          width: 280px;
           height: 100vh;
-          background-color: #2c3e50;
-          padding: 10px;
+          background: linear-gradient(135deg, #2c3e50, #34495e);
+          padding: 20px;
           color: white;
           overflow-y: auto;
+          box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar h4 {
+          font-size: 1.3rem;
+          color: #f1c40f;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          padding-bottom: 10px;
         }
         .sidebar-item {
           font-size: 1.1rem;
           color: white;
-          padding: 15px;
+          padding: 12px 15px;
           cursor: pointer;
-          transition: background 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          border-radius: 5px;
+        }
+        .sidebar-item .icon {
+          font-size: 1.5rem;
+          color: #f1c40f;
+        }
+        .sidebar-item .label {
+          flex-grow: 1;
         }
         .sidebar-item:hover {
-          background: #1abc9c;
+          background: linear-gradient(135deg, #1abc9c, #16a085);
+          transform: scale(1.05);
+          color: white;
         }
         `}
       </style>
