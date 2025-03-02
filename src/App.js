@@ -10,6 +10,7 @@ import WindowAC from "./pages/WindowAC";    // Điều hòa cửa sổ
 import ContactPage from "./pages/ContactPage"; // Trang liên hệ
 import About from "./pages/about"; // Trang liên hệ
 
+
 const App = () => {
   return (
     <CartProvider> {/* Bọc toàn bộ ứng dụng trong CartProvider */}

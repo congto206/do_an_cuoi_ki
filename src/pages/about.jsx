@@ -2,13 +2,23 @@ import React from 'react';
 import { Container, Row, Col, Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
+
 const ContactPage = () => {
   return (
     <>
       {/* Thanh Menu */}
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Bán Điều Hòa</Navbar.Brand>
+        <Navbar.Brand href="/" className="d-flex align-items-center">
+                  <img
+                    src="/images/logo.jpg" // Lấy logo từ thư mục public
+                    alt="Logo"
+                    width="40" // Điều chỉnh kích thước phù hợp
+                    height="40"
+                    className="me-2"
+                  />
+                  Bán Điều Hòa
+                </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
