@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { FaFire, FaSnowflake, FaBuilding, FaHome } from "react-icons/fa";
+import { FaFire, FaSnowflake, FaBuilding, FaHome, FaTimes } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const menuItems = [
@@ -10,19 +10,25 @@ const menuItems = [
   { id: "ceiling", icon: <FaBuilding />, label: "Điều hòa âm trần" },
 ];
 
-const SidebarComponent = () => {
+const SidebarComponent = ({ isOpen, toggleSidebar }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? "open" : ""}`}>
+      <Button className="close-btn" onClick={toggleSidebar}>
+        <FaTimes />
+      </Button>
+
       <h4 className="text-center fw-bold py-3">📌 Danh mục sản phẩm</h4>
-      
       {menuItems.map((item) => (
         <Button
           key={item.id}
           variant="outline-light"
           className="sidebar-btn d-flex align-items-center"
-          onClick={() => navigate(`#${item.id}`)}
+          onClick={() => {
+            navigate(`#${item.id}`);
+            toggleSidebar();
+          }}
         >
           <span className="icon">{item.icon}</span>
           <span className="label">{item.label}</span>
@@ -34,22 +40,31 @@ const SidebarComponent = () => {
         .sidebar {
           position: fixed;
           top: 0;
-          left: 0;
+          left: -280px;
           width: 280px;
           height: 100vh;
           background: #2c3e50;
           padding: 20px;
           color: white;
-          overflow-y: auto;
+          transition: left 0.3s ease-in-out;
           box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         }
-        .sidebar h4 {
-          font-size: 1.3rem;
-          color: #f1c40f;
-          border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-          padding-bottom: 10px;
-          margin-bottom: 15px;
+
+        .sidebar.open {
+          left: 0;
         }
+
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: red;
+          color: white;
+          border: none;
+          font-size: 1.2rem;
+          padding: 5px 10px;
+        }
+
         .sidebar-btn {
           width: 100%;
           font-size: 1.1rem;
@@ -63,22 +78,12 @@ const SidebarComponent = () => {
           border: 2px solid white;
           background: transparent;
         }
+
         .sidebar-btn:hover {
-          background: #bdc3c7; /* Nền xám nhạt */
-          color: #007bff; /* Chữ màu xanh dương */
-          border-color: #007bff; /* Viền xanh */
-          transform: scale(1.1); /* Phóng to khi hover */
-        }
-        .sidebar-btn .icon {
-          font-size: 1.5rem;
-          color: #f1c40f;
-          transition: color 0.3s ease-in-out;
-        }
-        .sidebar-btn:hover .icon {
-          color: #007bff; /* Icon đổi màu xanh khi hover */
-        }
-        .sidebar-btn .label {
-          flex-grow: 1;
+          background: #bdc3c7;
+          color: #007bff;
+          border-color: #007bff;
+          transform: scale(1.1);
         }
         `}
       </style>

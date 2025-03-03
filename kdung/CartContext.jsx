@@ -102,3 +102,25 @@ const Products = () => {
 };
 
 export default Products;
+
+
+{ id: 1, name: "Daikin Inverter 1.5 HP", category: "split", image: "/images/daikin1.jpg", price: "$500" },
+  { id: 2, name: "Panasonic Inverter 1HP", category: "split", image: "/images/daikin2.jpg", price: "$450" },
+  { id: 3, name: "LG DualCool 2HP", category: "split", image: "/images/daikin3.jpg", price: "$600" },
+  { id: 4, name: "Mitsubishi Electric 2 HP", category: "split", image: "/images/lg1.jpg", price: "$520" },
+  { id: 5, name: "Toshiba Inverter 1HP", category: "split", image: "/images/lg2.jpg", price: "$430" },
+  { id: 6, name: "Daikin Inverter 1.5 HP", category: "split", image: "/images/lg3.jpg", price: "$500" },
+  { id: 7, name: "Panasonic Inverter 1HP", category: "window", image: "/images/maylanhcua1.jpg", price: "$450" },
+  { id: 8, name: "LG DualCool 2HP", category: "window", image: "/images/maylanhcua2.jpg", price: "$600" },
+  { id: 9, name: "Mitsubishi Electric 2 HP", category: "split", image: "/images/panasonic1.jpg", price: "$520" },
+  { id: 10, name: "Toshiba Inverter 1HP", category: "split", image: "/images/panasonic2.jpg", price: "$430" },
+  { id: 11, name: "Daikin Inverter 1.5 HP", category: "split", image: "/images/panasonic3.jpg", price: "$500" },
+  { id: 12, name: "Panasonic Inverter 1HP", category: "ceiling", image: "/images/sanphamamtuong1.jpg", price: "$450" },
+  { id: 13, name: "LG DualCool 2HP", category: "ceiling", image: "/images/sanphamamtuong2.jpg", price: "$600" },
+  { id: 14, name: "Mitsubishi Electric 2 HP", category: "ceiling", image: "/images/sanphamamtuong3.jpg", price: "$520" },
+  { id: 15, name: "Toshiba Inverter 1HP", category: "best", image: "/images/panasonic1.jpg", price: "$430" },
+  { id: 16, name: "Toshiba Inverter 1HP", category: "window", image: "/images/maylanhcua3.jpg", price: "$430" },
+  { id: 17, name: "Toshiba Inverter 1HP", category: "best", image: "/images/panasonic1.jpg", price: "$430" },
+  { id: 18, name: "Toshiba Inverter 1HP", category: "best", image: "/images/sanphamamtuong3.jpg", price: "$430" },
+  { id: 19, name: "Toshiba Inverter 1HP", category: "best", image: "/images/lg3.jpg", price: "$430" },
+  { id: 20, name: "Toshiba Inverter 1HP", category: "best", image: "/images/maylanhcua3.jpg", price: "$430" },
