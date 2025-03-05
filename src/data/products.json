@@ -169,7 +169,7 @@
     "power_consumption": "1600W"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Mitsubishi Electric 2 HP",
     "brand":"LG",
     "image": "/images/sanphamamtuong3.jpg",
@@ -182,7 +182,7 @@
     "power_consumption":"1600W"
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA (3 Pha)",
     "brand":"LG",
     "image": "/images/sanphamamtuong4.jpg",
@@ -195,7 +195,7 @@
     "power_consumption":"1600W"
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "Máy lạnh âm trần 1 hướng LG Inverter 2 HP ZTNQ18GTLA0",
     "brand":"LG",
     "image": "/images/sanphamamtuong5.jpg",
@@ -208,7 +208,7 @@
     "power_consumption":"1600W"
   },
   {
-    "id": 14,
+    "id": 18,
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA",
     "brand":"LG",
     "image": "/images/sanphamamtuong6.jpg",
@@ -221,7 +221,7 @@
     "power_consumption":"1600W"
   },
   {
-    "id": 15,
+    "id": 19,
     "name": "Toshiba Inverter 1HP",
     "brand":"Samsung",
     "image": "/images/maylanhcua3.jpg",
