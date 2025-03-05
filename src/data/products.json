@@ -182,6 +182,45 @@
     "power_consumption":"1600W"
   },
   {
+    "id": 14,
+    "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA (3 Pha)",
+    "brand":"LG",
+    "image": "/images/sanphamamtuong4.jpg",
+    "price": 460,
+    "description": "Thiết kế nhỏ gọn, làm lạnh nhanh.",
+    "stock":4.5,
+    "category":"ceiling",
+    "rating":5,
+    "warranty":"2 năm",
+    "power_consumption":"1600W"
+  },
+  {
+    "id": 14,
+    "name": "Máy lạnh âm trần 1 hướng LG Inverter 2 HP ZTNQ18GTLA0",
+    "brand":"LG",
+    "image": "/images/sanphamamtuong5.jpg",
+    "price": 460,
+    "description": "Thiết kế nhỏ gọn, làm lạnh nhanh.",
+    "stock":4.5,
+    "category":"ceiling",
+    "rating":5,
+    "warranty":"2 năm",
+    "power_consumption":"1600W"
+  },
+  {
+    "id": 14,
+    "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA",
+    "brand":"LG",
+    "image": "/images/sanphamamtuong6.jpg",
+    "price": 460,
+    "description": "Thiết kế nhỏ gọn, làm lạnh nhanh.",
+    "stock":4.5,
+    "category":"ceiling",
+    "rating":5,
+    "warranty":"2 năm",
+    "power_consumption":"1600W"
+  },
+  {
     "id": 15,
     "name": "Toshiba Inverter 1HP",
     "brand":"Samsung",
