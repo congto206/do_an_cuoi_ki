@@ -427,5 +427,18 @@
     "rating":4.8,
     "warranty":"2 năm",
     "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 34,
+    "name": "Máy lạnh âm trần Panasonic Inverter 3 HP S-2430PU3H / U-30PR1H5",
+    "brand":"LG",
+    "image": "/images/amtran15.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
   }
 ]
