@@ -16,34 +16,34 @@ const NavbarComponent = () => {
             height="40"
             className="me-2"
           />
-          Bán Điều Hòa
+         
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" active={location.pathname === "/"}>
-              Trang chủ
+              Home
             </Nav.Link>
-            <NavDropdown title="Sản phẩm" id="basic-nav-dropdown">
+            <NavDropdown title="Products" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/products" active={location.pathname === "/products"}>
-                Tất cả điều hòa
+              All air-conditioned
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/products/split" active={location.pathname === "/products/split"}>
-                Điều hòa treo tường
+             Split AC
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/ceiling" active={location.pathname === "/products/ceiling"}>
-                Điều hòa âm trần
+                Ceiling AC
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/window" active={location.pathname === "/products/window"}>
-                Điều hòa cửa sổ
+                Window AC
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/about" active={location.pathname === "/about"}>
-              Giới thiệu
+              About US
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" active={location.pathname === "/contact"}>
-              Liên hệ
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
