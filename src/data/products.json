@@ -232,5 +232,57 @@
     "rating":4.8,
     "warranty":"3 năm",
     "power_consumption":"1600W"
+  },
+  {
+    "id": 20,
+    "name": "Máy lạnh Funiki Inverter 1 HP HIC09TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-1.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1 HP - 9.000 BTU"
+  },
+  {
+    "id": 21,
+    "name": "Máy lạnh Funiki Inverter 2 HP HIC18TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-2.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"2 HP - 17.000 BTU"
+  },
+  {
+    "id": 22,
+    "name": "Máy lạnh Funiki Inverter 1.5 HP HIC12TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-3.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 23,
+    "name": "Máy lạnh Funiki Inverter 2.5 HP HIC24TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-4.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"2.5 HP - 21.000 BTU"
   }
 ]
