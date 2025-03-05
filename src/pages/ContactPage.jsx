@@ -101,32 +101,7 @@ const ContactPage = () => {
         </Container>
       </Navbar>
 
-      <Container className="mt-5 contact-container">
-        <h2 className="text-center section-title">Liên hệ chúng tôi</h2>
-
-        {/* Form Nhập Thông Tin */}
-        <Row className="mb-5">
-          <Col md={{ span: 8, offset: 2 }} className="contact-form">
-            <h5 className="form-title">Gửi tin nhắn cho chúng tôi</h5>
-            <Form>
-              <Form.Group controlId="formName" className="mb-3">
-                <Form.Label>Họ và tên</Form.Label>
-                <Form.Control type="text" placeholder="Nhập họ và tên của bạn" className="form-control" />
-              </Form.Group>
-              <Form.Group controlId="formEmail" className="mb-3">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Nhập email của bạn" className="form-control" />
-              </Form.Group>
-              <Form.Group controlId="formMessage" className="mb-3">
-                <Form.Label>Tin nhắn</Form.Label>
-                <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" className="form-control" />
-              </Form.Group>
-              <Button className="btn-custom" type="submit">
-                Gửi
-              </Button>
-            </Form>
-          </Col>
-        </Row>
+    
 
         {/* Google Map và Thông Tin Liên Hệ */}
         <Row>
@@ -156,6 +131,32 @@ const ContactPage = () => {
               <FaMapMarkerAlt size={25} className="me-3 text-success" />
               <strong>Địa chỉ:</strong> 8A Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội 100000, Việt Nam
             </div>
+          </Col>
+        </Row>
+        <Container className="mt-5 contact-container">
+        <h2 className="text-center section-title">Liên hệ chúng tôi</h2>
+
+        {/* Form Nhập Thông Tin */}
+        <Row className="mb-5">
+          <Col md={{ span: 8, offset: 2 }} className="contact-form">
+            <h5 className="form-title">Gửi tin nhắn cho chúng tôi</h5>
+            <Form>
+              <Form.Group controlId="formName" className="mb-3">
+                <Form.Label>Họ và tên</Form.Label>
+                <Form.Control type="text" placeholder="Nhập họ và tên của bạn" className="form-control" />
+              </Form.Group>
+              <Form.Group controlId="formEmail" className="mb-3">
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" placeholder="Nhập email của bạn" className="form-control" />
+              </Form.Group>
+              <Form.Group controlId="formMessage" className="mb-3">
+                <Form.Label>Tin nhắn</Form.Label>
+                <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" className="form-control" />
+              </Form.Group>
+              <Button className="btn-custom" type="submit">
+                Gửi
+              </Button>
+            </Form>
           </Col>
         </Row>
       </Container>
