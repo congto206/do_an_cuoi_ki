@@ -3,8 +3,8 @@ import { Container, Row, Col, Card, Button, Pagination, ListGroup } from "react-
 import { useNavigate } from "react-router-dom";
 import { FaFire, FaHome, FaSnowflake, FaBuilding } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent";
+import Footer from "../components/Footer";  // Import Footer
 import products from '../data/products.json';
-
 
 const categoryIcons = {
   best: <FaFire className="category-icon" />, 
@@ -14,14 +14,11 @@ const categoryIcons = {
 };
 
 const categories = [
-  { key: "best", title: " Điều hòa bán chạy nhất" },
-  { key: "ceiling", title: " Điều hòa cửa sổ" },
-  { key: "split", title: " Điều hòa treo tường" },
-  { key: "ceiling", title: " Điều hòa âm trần" },
+  { key: "best", title: " Best selling air conditioner" },
+  { key: "Window", title: " Window AC" },
+  { key: "split", title: " Split AC" },
+  { key: "ceiling", title: " Ceiling AC" },
 ];
-
-
-
 
 const ProductSection = ({ title, category }) => {
   const navigate = useNavigate();
@@ -48,10 +45,10 @@ const ProductSection = ({ title, category }) => {
                 <Card.Text className="text-danger fs-5 fw-bold">{product.price}</Card.Text>
                 <div className="mt-auto">
                   <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
-                    🔍 Xem chi tiết
+                    🔍 Details
                   </Button>
                   <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
-                    🛒 Mua ngay
+                    🛒 Buy
                   </Button>
                 </div>
               </Card.Body>
@@ -78,7 +75,7 @@ const Products = () => {
       <NavbarComponent />
       <div className="products-container">
         <div className="sidebar">
-          <h4 className="text-center text-black fw-bold py-3"> Danh mục sản phẩm</h4>
+          <h4 className="text-center text-black fw-bold py-3"> Product catalog</h4>
           <ListGroup variant="flush">
             {categories.map(({ key, title }) => (
               <ListGroup.Item key={key} action className="sidebar-item" onClick={() => document.getElementById(key).scrollIntoView({ behavior: "smooth" })}>
@@ -89,12 +86,15 @@ const Products = () => {
         </div>
 
         <Container className="mt-4 product-content">
-          <h2 className="text-center text-primary fw-bold"> Danh sách điều hòa </h2>
+          <h2 className="text-center text-primary fw-bold"> Air conditioner list </h2>
           {categories.map(({ key, title }) => (
             <ProductSection key={key} title={title} category={key} />
           ))}
         </Container>
       </div>
+
+      {/* Thêm Footer ở đây */}
+      <Footer />
 
       <style>
         {`
@@ -126,33 +126,31 @@ const Products = () => {
           box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
           border-right: 2px solid #ddd;
         }
-                    /* Hiệu ứng rung nhẹ liên tục */
-          @keyframes pulse {
-            0% {
-              transform: scale(1);
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            }
-            50% {
-              transform: scale(1.02);
-              box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-            }
-            100% {
-              transform: scale(1);
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           }
-          .product-card {
-            animation: pulse 3s infinite ease-in-out;
-            transition: all 0.3s ease-in-out;
+          50% {
+            transform: scale(1.02);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
           }
+          100% {
+            transform: scale(1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+        .product-card {
+          animation: pulse 3s infinite ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
 
-          /* Kết hợp hiệu ứng hover */
-          .product-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-            animation: none;
-          }
-
+        .product-card:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+          animation: none;
+        }
 
         .product-content {
           margin-left: 20%;

@@ -21,7 +21,7 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/" active={location.pathname === "/"}>
+            <Nav.Link as={Link} to="/Products" active={location.pathname === "/"}>
               Home
             </Nav.Link>
             <NavDropdown title="Products" id="basic-nav-dropdown">

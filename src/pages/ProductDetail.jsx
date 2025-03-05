@@ -37,7 +37,7 @@ const ProductDetail = () => {
     return (
       <Container className="mt-5 text-center">
         <h2 className="text-danger">❌ Sản phẩm không tồn tại</h2>
-        <Button variant="primary" onClick={() => navigate(-1)}>⬅️ Quay lại</Button>
+        <Button variant="primary" onClick={() => navigate(-1)}>⬅️ Back</Button>
       </Container>
     );
 
@@ -60,10 +60,10 @@ const ProductDetail = () => {
             <Card.Text className="text-danger fs-3 fw-bold">{product.price} VND</Card.Text>
             <div className="d-flex justify-content-center">
               <Button variant="outline-secondary" className="m-2" onClick={() => navigate(-1)}>
-                ⬅️ Quay lại
+                ⬅️ Back
               </Button>
               <Button variant="success" className="m-2" onClick={handleBuyNow}>
-                🛒 Mua ngay
+                🛒 Buy
               </Button>
             </div>
           </Card.Body>
