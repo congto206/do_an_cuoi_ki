@@ -170,7 +170,7 @@
     "power_consumption": "1600W"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Mitsubishi Electric 2 HP",
     "brand":"LG",
     "image": "/images/sanphamamtuong3.jpg",
@@ -183,7 +183,11 @@
     "power_consumption":"1600W"
   },
   {
+<<<<<<< HEAD
     "id": 15,
+=======
+    "id": 16,
+>>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA (3 Pha)",
     "brand":"LG",
     "image": "/images/sanphamamtuong4.jpg",
@@ -196,7 +200,11 @@
     "power_consumption":"1600W"
   },
   {
+<<<<<<< HEAD
     "id": 16,
+=======
+    "id": 17,
+>>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần 1 hướng LG Inverter 2 HP ZTNQ18GTLA0",
     "brand":"LG",
     "image": "/images/sanphamamtuong5.jpg",
@@ -209,7 +217,11 @@
     "power_consumption":"1600W"
   },
   {
+<<<<<<< HEAD
     "id": 17,
+=======
+    "id": 18,
+>>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA",
     "brand":"LG",
     "image": "/images/sanphamamtuong6.jpg",
@@ -222,7 +234,11 @@
     "power_consumption":"1600W"
   },
   {
+<<<<<<< HEAD
     "id": 18,
+=======
+    "id": 19,
+>>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Toshiba Inverter 1HP",
     "brand":"Samsung",
     "image": "/images/maylanhcua3.jpg",
@@ -233,5 +249,200 @@
     "rating":4.8,
     "warranty":"3 năm",
     "power_consumption":"1600W"
+  },
+  {
+    "id": 20,
+    "name": "Máy lạnh Funiki Inverter 1 HP HIC09TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-1.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1 HP - 9.000 BTU"
+  },
+  {
+    "id": 21,
+    "name": "Máy lạnh Funiki Inverter 2 HP HIC18TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-2.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"2 HP - 17.000 BTU"
+  },
+  {
+    "id": 22,
+    "name": "Máy lạnh Funiki Inverter 1.5 HP HIC12TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-3.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 23,
+    "name": "Máy lạnh Funiki Inverter 2.5 HP HIC24TMU.ST3",
+    "brand":"Funiki",
+    "image": "/images/funiki-4.jpg",
+    "price": 4,
+    "description": "Tích hợp màng lọc kháng khuẩn.",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"2.5 HP - 21.000 BTU"
+  },
+  {
+    "id": 24,
+    "name": "Máy lạnh Toshiba Inverter 1.5 HP RAS-H13Z2KCVG-V",
+    "brand":"Toshiba",
+    "image": "/images/toshiba1.jpg",
+    "price": 4,
+    "description": "Luồng gió thổi dễ chịu bảo vệ da HadaCare Chức năng tự làm sạch",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.200 BTU"
+  },
+  {
+    "id": 25,
+    "name": "Máy lạnh Casper Inverter 1 HP GC-09IB36",
+    "brand":"Casper",
+    "image": "/images/casper1.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1 HP - 9.000 BTU"
+  },
+  {
+    "id": 26,
+    "name": "Máy lạnh Casper Inverter 1.5 HP GC-12IB36",
+    "brand":"Casper",
+    "image": "/images/casper2.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 27,
+    "name": "Máy lạnh âm trần 1 hướng LG Inverter 1.5 HP ZTNQ12GULA0",
+    "brand":"LG",
+    "image": "/images/amtran7.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 28,
+    "name": "Máy lạnh âm trần Cassette 360 độ Samsung Inverter 4 HP AC120TN4PKC/EA",
+    "brand":"LG",
+    "image": "/images/amtran8.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 29,
+    "name": "Máy lạnh âm trần Nagakawa 5 HP NT-C50R1T20",
+    "brand":"Nagakawa",
+    "image": "/images/amtran9.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 30,
+    "name": "Máy lạnh âm trần Nagakawa 4 HP NT-C36R1T20",
+    "brand":"Nagakawa",
+    "image": "/images/amtran10.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 31,
+    "name": "Máy lạnh âm trần 2 chiều Midea 5 HP MCD1-50HRDN1s",
+    "brand":"Midea",
+    "image": "/images/amtran11.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 32,
+    "name": "Máy lạnh âm trần Gree 2.5 HP GU71T/A‐K/GUL71W/A‐K",
+    "brand":"Gree",
+    "image": "/images/amtran12.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 33,
+    "name": "Máy lạnh âm trần LG Inverter 5 HP ATNQ48GMLE7",
+    "brand":"LG",
+    "image": "/images/amtran13.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
+  },
+  {
+    "id": 34,
+    "name": "Máy lạnh âm trần Panasonic Inverter 3 HP S-2430PU3H / U-30PR1H5",
+    "brand":"LG",
+    "image": "/images/amtran15.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"ceiling",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
   }
 ]
