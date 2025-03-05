@@ -284,5 +284,44 @@
     "rating":4.8,
     "warranty":"2 năm",
     "power_consumption":"2.5 HP - 21.000 BTU"
+  },
+  {
+    "id": 24,
+    "name": "Máy lạnh Toshiba Inverter 1.5 HP RAS-H13Z2KCVG-V",
+    "brand":"Toshiba",
+    "image": "/images/toshiba1.jpg",
+    "price": 4,
+    "description": "Luồng gió thổi dễ chịu bảo vệ da Hada CareChức năng tự làm sạch",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.200 BTU"
+  },
+  {
+    "id": 25,
+    "name": "Máy lạnh Casper Inverter 1 HP GC-09IB36",
+    "brand":"Casper",
+    "image": "/images/casper1.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1 HP - 9.000 BTU"
+  },
+  {
+    "id": 26,
+    "name": "Máy lạnh Casper Inverter 1.5 HP GC-12IB36",
+    "brand":"Casper",
+    "image": "/images/casper2.jpg",
+    "price": 4,
+    "description": "Cơ chế bảo vệ an toàn kép phát hiện rò rỉ thông minh",
+    "stock":15,
+    "category":"split",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"1.5 HP - 12.000 BTU"
   }
 ]
