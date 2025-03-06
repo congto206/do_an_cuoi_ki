@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
 import productsData from "../data/products.json";
+import Footer from "../components/Footer";
 
 const WindowAC = () => {
     const navigate = useNavigate();
@@ -112,6 +113,7 @@ const WindowAC = () => {
                 }
                 `}
             </style>
+            <Footer />
         </>
     );
 };
