@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent"; // Import Navbar
+import Footer from "../components/Footer";
+
 
 const ContactPage = () => {
   return (
@@ -97,6 +99,8 @@ const ContactPage = () => {
           </Row>
         </Container>
       </Container>
+      <Footer />
+
     </>
   );
 };

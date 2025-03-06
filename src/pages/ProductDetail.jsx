@@ -4,6 +4,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext"; // Import useCart
 import NavbarComponent from "../components/NavbarComponent";
 import products from "../data/products.json"; // Import dữ liệu từ JSON
+import Footer from "../components/Footer";
+
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -54,6 +56,8 @@ const ProductDetail = () => {
           </Card.Body>
         </Card>
       </Container>
+      <Footer />
+
     </>
   );
 };

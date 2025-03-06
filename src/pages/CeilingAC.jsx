@@ -5,6 +5,8 @@ import NavbarComponent from "../components/NavbarComponent";
 import products from "../data/products.json";
 import { debounce } from "lodash";
 import { FaShoppingCart, FaInfoCircle } from "react-icons/fa";
+import Footer from "../components/Footer";
+
 
 const CeilingAC = () => {
   const navigate = useNavigate();
@@ -185,6 +187,8 @@ const CeilingAC = () => {
         }
         `}
       </style>
+      <Footer />
+
     </>
   );
 };

@@ -3,6 +3,8 @@ import { Container, Button, Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaSnowflake } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent";
+import Footer from "../components/Footer";
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -120,6 +122,8 @@ const Home = () => {
           <FaShoppingCart /> Xem sản phẩm
         </Button>
       </Container>
+      <Footer />
+
     </>
   );
 };
