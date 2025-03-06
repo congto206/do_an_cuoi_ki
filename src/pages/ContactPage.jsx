@@ -99,8 +99,8 @@ const ContactPage = () => {
           </Row>
         </Container>
       </Container>
-      <Footer />
-
+      <Footer/>
+      
     </>
   );
 };
