@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
 import products from "../data/products.json";
 import { debounce } from "lodash";
-import { FaSearch, FaShoppingCart, FaInfoCircle } from "react-icons/fa";
+import { FaShoppingCart, FaInfoCircle } from "react-icons/fa";
 
 const CeilingAC = () => {
   const navigate = useNavigate();
@@ -12,19 +12,20 @@ const CeilingAC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [priceFilter, setPriceFilter] = useState("all");
 
-  const handleScroll = useCallback(
-    debounce(() => {
+  const debouncedHandleScroll = useMemo(() => {
+    return debounce(() => {
       setShowButton(window.scrollY > 300);
-    }, 200),
-    []
-  );
-
+    }, 200);
+  }, [setShowButton]);
+  
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", debouncedHandleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
-  }, [handleScroll]);
+  }, [debouncedHandleScroll]);
+  
+
 
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
