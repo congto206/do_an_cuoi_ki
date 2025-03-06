@@ -56,8 +56,8 @@ const CeilingAC = () => {
           <Form.Select className="price-filter" value={priceFilter} onChange={(e) => setPriceFilter(e.target.value)}>
             <option value="all">All Prices</option>
             <option value="500">Up to $500</option>
-            <option value="1000">Up to $1000</option>
-            <option value="2000">Up to $2000</option>
+            <option value="1000">Up to $750</option>
+            <option value="2000">Up to $1000</option>
           </Form.Select>
         </div>
 
