@@ -1,112 +1,119 @@
-import React from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
-import Footer from "../components/Footer";
+import productsData from "../data/products.json";
 
-const ContactPage = () => {
-  return (
-    <>
-      <style>
-        {`
-          .contact-container {
-            background: #f1f3f5;
-            padding: 40px 20px;
-            border-radius: 10px;
-            max-width: 850px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-          }
-          .contact-form {
-            background: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-          }
-          .btn-custom {
-            background-color: #28a745;
-            color: white;
-            padding: 12px;
-            border-radius: 5px;
-            width: 100%;
-            transition: all 0.3s;
-          }
-          .btn-custom:hover {
-            background-color: #218838;
-          }
-          .info-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-          }
-        `}
-      </style>
+const WindowAC = () => {
+    const navigate = useNavigate();
+    const [showButton, setShowButton] = useState(false);
 
-      <NavbarComponent />
+    const handleScroll = () => {
+        setShowButton(window.scrollY > 300);
+    };
 
-      <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
-        <Container className="contact-container">
-          <h2 className="text-center text-dark mb-4">Liên hệ chúng tôi</h2>
-          
-          <Row>
-            <Col md={6} className="text-center">
-              <h5 className="text-success">Hà Nội</h5>
-              <iframe
-                title="Bản đồ"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.985287588934!2d105.77949717609838!3d21.032185780614374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab36f62c235f%3A0x868c008e1c842b02!2zOEEgxJDGsOG7nW5nIFRo4bq_dCBUaHV54buFLCBN4bu5IMSQw6xuaCwgQ-G7lWkgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3Q!5e0!3m2!1svi!2s!4v1709200000000!5m2!1svi!2s"
-                width="100%"
-                height="250"
-                style={{ border: 0, borderRadius: "10px" }}
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </Col>
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-            <Col md={6} className="d-flex flex-column justify-content-center">
-              <div className="info-item">
-                <FaPhone size={20} className="text-primary" />
-                <strong>+84 123 456 789</strong>
-              </div>
-              <div className="info-item">
-                <FaEnvelope size={20} className="text-danger" />
-                <strong>support@maylanh.com</strong>
-              </div>
-              <div className="info-item">
-                <FaMapMarkerAlt size={20} className="text-success" />
-                <strong>8A Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội 100000</strong>
-              </div>
-            </Col>
-          </Row>
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
-          <Row className="mt-4">
-            <Col md={{ span: 8, offset: 2 }} className="contact-form">
-              <h5 className="text-center text-primary mb-3">Gửi tin nhắn cho chúng tôi</h5>
-              <Form>
-                <Form.Group controlId="formName" className="mb-3">
-                  <Form.Label>Họ và tên</Form.Label>
-                  <Form.Control type="text" placeholder="Nhập họ và tên của bạn" required />
-                </Form.Group>
-                <Form.Group controlId="formEmail" className="mb-3">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Nhập email của bạn" required />
-                </Form.Group>
-                <Form.Group controlId="formMessage" className="mb-3">
-                  <Form.Label>Tin nhắn</Form.Label>
-                  <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" required />
-                </Form.Group>
-                <Button className="btn-custom" type="submit">
-                  Gửi
-                </Button>
-              </Form>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      
-      <Footer />
-    </>
-  );
+    const products = productsData.filter(product => product.category === "window");
+
+    return (
+        <>
+            <NavbarComponent />
+            <Container className="mt-4">
+                <h2 className="text-center text-primary fw-bold"> Window AC</h2>
+                <Row className="mt-4">
+                    {products.map((product) => (
+                        <Col key={product.id} lg={4} md={6} sm={12} className="mb-4">
+                            <Card className="shadow-lg border-0">
+                                <Card.Img variant="top" src={product.image} className="product-img" />
+                                <Card.Body className="text-center">
+                                    <Card.Title className="fw-bold">{product.name}</Card.Title>
+                                    <Card.Text className="text-danger fs-5 fw-bold">{product.price}</Card.Text>
+                                    <Button variant="primary" className="mt-2" onClick={() => navigate(`/product/${product.id}`)}>
+                                        🔍 Details
+                                    </Button>
+                                    <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
+                                      🛒 Buy
+                                    </Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+
+            {showButton && (
+                <button onClick={scrollToTop} className="back-to-top">
+                    ⬆️
+                </button>
+            )}
+
+            <style>
+                {`
+                .content-container {
+                    padding-top: 80px;
+                }
+
+                .title {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: #007bff;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+                }
+
+                .product-img {
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                .product-card {
+                    border: none;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                }
+
+                .product-card:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+                }
+
+                .btn-custom {
+                    background-color: #28a745;
+                    border: none;
+                }
+
+                .btn-custom:hover {
+                    background-color: #218838;
+                }
+                .back-to-top {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    transition: opacity 0.3s;
+                }
+
+                .back-to-top:hover {
+                    background-color: #0056b3;
+                }
+                `}
+            </style>
+        </>
+    );
 };
 
-export default ContactPage;
+export default WindowAC;
