@@ -48,7 +48,7 @@ const ContactPage = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/Products">Home</Nav.Link>
-              <NavDropdown title="Sản phẩm" id="basic-nav-dropdown">
+              <NavDropdown title="Products" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/products">All air-conditioned</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/products/split">Split AC</NavDropdown.Item>

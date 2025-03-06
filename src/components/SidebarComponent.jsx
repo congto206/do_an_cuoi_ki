@@ -20,20 +20,26 @@ const SidebarComponent = ({ isOpen, toggleSidebar }) => {
       </Button>
 
       <h4 className="text-center fw-bold py-3">📌 Danh mục sản phẩm</h4>
-      {menuItems.map((item) => (
-        <Button
-          key={item.id}
-          variant="outline-light"
-          className="sidebar-btn d-flex align-items-center"
-          onClick={() => {
-            navigate(`#${item.id}`);
-            toggleSidebar();
-          }}
-        >
-          <span className="icon">{item.icon}</span>
-          <span className="label">{item.label}</span>
-        </Button>
-      ))}
+      <div className="sidebar-menu">
+        {menuItems.map((item) => (
+          <Button
+            key={item.id}
+            className="sidebar-btn"
+            onClick={() => {
+              navigate(`#${item.id}`);
+              toggleSidebar();
+            }}
+          >
+            <span className="icon">{item.icon}</span>
+            <span className="label">{item.label}</span>
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
 
       <style>
         {`
@@ -87,8 +93,6 @@ const SidebarComponent = ({ isOpen, toggleSidebar }) => {
         }
         `}
       </style>
-    </div>
-  );
-};
-
+ 
 export default SidebarComponent;
+

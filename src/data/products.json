@@ -11,7 +11,7 @@
     "category": "split",
     "rating": 4.8,
     "warranty": "2 năm",
-    "power_consumption": "1200W"
+    "power_consumption": "Công suất 1200W"
   },
   {
     "id": 2,
@@ -183,11 +183,8 @@
     "power_consumption":"1600W"
   },
   {
-<<<<<<< HEAD
-    "id": 15,
-=======
+
     "id": 16,
->>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA (3 Pha)",
     "brand":"LG",
     "image": "/images/sanphamamtuong4.jpg",
@@ -200,11 +197,7 @@
     "power_consumption":"1600W"
   },
   {
-<<<<<<< HEAD
-    "id": 16,
-=======
     "id": 17,
->>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần 1 hướng LG Inverter 2 HP ZTNQ18GTLA0",
     "brand":"LG",
     "image": "/images/sanphamamtuong5.jpg",
@@ -217,11 +210,7 @@
     "power_consumption":"1600W"
   },
   {
-<<<<<<< HEAD
-    "id": 17,
-=======
     "id": 18,
->>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Máy lạnh âm trần Samsung Inverter 3.5 HP AC100TN4DKC/EA",
     "brand":"LG",
     "image": "/images/sanphamamtuong6.jpg",
@@ -234,11 +223,7 @@
     "power_consumption":"1600W"
   },
   {
-<<<<<<< HEAD
-    "id": 18,
-=======
     "id": 19,
->>>>>>> 6482bc2efea4c2554fd92a1507edb92703cef4c8
     "name": "Toshiba Inverter 1HP",
     "brand":"Samsung",
     "image": "/images/maylanhcua3.jpg",
