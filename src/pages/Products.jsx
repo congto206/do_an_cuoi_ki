@@ -98,16 +98,6 @@ const Products = () => {
 
       <style>
         {`
-        .navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 1000;
-          background-color: #ffffff;
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .products-container {
           display: flex;
           margin-top: 70px;

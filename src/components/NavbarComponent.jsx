@@ -6,48 +6,130 @@ const NavbarComponent = () => {
   const location = useLocation();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar expand="lg" className="custom-navbar">
       <Container>
+        {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
             src="/images/logo.jpg"
             alt="Logo"
-            width="40"
-            height="40"
-            className="me-2"
+            width="45"
+            height="45"
+            className="me-2 rounded-circle shadow-sm"
           />
-         
+          <span className="brand-name">AirCon Store</span>
         </Navbar.Brand>
+
+        {/* Toggle button */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Menu */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/Products" active={location.pathname === "/"}>
+            <Nav.Link
+              as={Link}
+              to="/Products"
+              className={location.pathname === "/" ? "active-link" : ""}
+            >
               Home
             </Nav.Link>
+
             <NavDropdown title="Products" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/products" active={location.pathname === "/products"}>
-              All air-conditioned
+              <NavDropdown.Item
+                as={Link}
+                to="/products"
+                className={location.pathname === "/products" ? "active-dropdown" : ""}
+              >
+                All Air-conditioned
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/products/split" active={location.pathname === "/products/split"}>
-             Split AC
+              <NavDropdown.Item
+                as={Link}
+                to="/products/split"
+                className={location.pathname === "/products/split" ? "active-dropdown" : ""}
+              >
+                Split AC
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/ceiling" active={location.pathname === "/products/ceiling"}>
+              <NavDropdown.Item
+                as={Link}
+                to="/products/ceiling"
+                className={location.pathname === "/products/ceiling" ? "active-dropdown" : ""}
+              >
                 Ceiling AC
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/window" active={location.pathname === "/products/window"}>
+              <NavDropdown.Item
+                as={Link}
+                to="/products/window"
+                className={location.pathname === "/products/window" ? "active-dropdown" : ""}
+              >
                 Window AC
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/about" active={location.pathname === "/about"}>
-              About US
+
+            <Nav.Link
+              as={Link}
+              to="/about"
+              className={location.pathname === "/about" ? "active-link" : ""}
+            >
+              About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" active={location.pathname === "/contact"}>
+
+            <Nav.Link
+              as={Link}
+              to="/contact"
+              className={location.pathname === "/contact" ? "active-link" : ""}
+            >
               Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
+
+      {/* Custom CSS */}
+      <style>
+        {`
+          .custom-navbar {
+            background: #343a40;
+            padding: 12px 0;
+            box-shadow: 0px 4px 6px rgba(0, 1, 2, 0.1);
+          }
+
+          .custom-navbar .nav-link {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+          }
+
+          .custom-navbar .nav-link:hover {
+            color:rgb(14, 150, 230);
+          }
+
+          .custom-navbar .active-link {
+            color: rgb(14, 150, 230) !important;
+            font-weight: bold;
+            border-bottom: 2px solid rgb(14, 150, 230);
+          }
+
+          .custom-navbar .dropdown-menu {
+            background: #222;
+          }
+
+          .custom-navbar .dropdown-item {
+            color: white;
+            transition: background 0.3s ease-in-out;
+          }
+
+          .custom-navbar .dropdown-item:hover {
+            background:rgb(14, 150, 230);
+          }
+
+          .custom-navbar .active-dropdown {
+            background: rgb(14, 150, 230) !important;
+            color: white !important;
+          }
+        `}
+      </style>
     </Navbar>
   );
 };
