@@ -15,7 +15,7 @@ const categoryIcons = {
 
 const categories = [
   { key: "best", title: " Best selling air conditioner" },
-  { key: "Window", title: " Window AC" },
+  { key: "window", title: " Window AC" },
   { key: "split", title: " Split AC" },
   { key: "ceiling", title: " Ceiling AC" },
 ];
