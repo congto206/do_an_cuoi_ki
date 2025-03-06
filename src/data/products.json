@@ -740,5 +740,18 @@
     "rating": 5,
     "warranty": "2 years",
     "power_consumption": "1600W"
+  },
+  {
+    "id": 62,
+    "name": "HomePointe 5,000 BTU Mechanical window Air Conditioner w/ Dial Temp Control",
+    "brand":"HomePointe ",
+    "image": "/images/cuaso5.webp",
+    "price": 4,
+    "description": "window Air Conditioner with HeaterWhite",
+    "stock":15,
+    "category":"best",
+    "rating":4.8,
+    "warranty":"2 năm",
+    "power_consumption":"230V "   
   }
 ]
