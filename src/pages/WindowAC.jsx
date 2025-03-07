@@ -102,14 +102,17 @@ const WindowAC = () => {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    border-radius: 10px;
+                    overflow: hidden;
                 }
 
                 .product-card:hover {
                     transform: scale(1.05);
-                    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
                 }
-                
+
+                /* Hình ảnh phóng to nhẹ khi hover */
                 .card-img-container {
                     height: 250px;
                     display: flex;
@@ -119,26 +122,58 @@ const WindowAC = () => {
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                 }
-                
+
                 .product-img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    transition: transform 0.3s ease-in-out;
+                    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
                 }
 
                 .product-card:hover .product-img {
                     transform: scale(1.1);
-                }
-                
-                .btn-animate {
-                    transition: transform 0.2s ease-in-out;
+                    opacity: 0.9;
                 }
 
-                .btn-animate:hover {
-                    transform: scale(1.1);
+                /* Nút chung */
+                .btn-animate {
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    padding: 10px 16px;
                 }
-                
+
+                /* Nút "Details" */
+                .btn-animate.btn-outline-primary {
+                    border: 2px solid #007bff;
+                    color: #007bff;
+                    background: white;
+                }
+
+                .btn-animate.btn-outline-primary:hover {
+                    background: rgba(0, 123, 255, 0.1);
+                    color: #0056b3;
+                    border-color: #0056b3;
+                    transform: scale(1.08);
+                    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+                }
+
+                /* Nút "Buy" */
+                .btn-animate.btn-success {
+                    background: #28a745;
+                    border: 2px solid #28a745;
+                    color: white;
+                }
+
+                .btn-animate.btn-success:hover {
+                    background: #218838;
+                    border-color: #1e7e34;
+                    transform: scale(1.08);
+                    box-shadow: 0px 4px 12px rgba(40, 167, 69, 0.4);
+                }
+
+
+                /* Nút quay lại đầu trang */
                 .back-to-top {
                     position: fixed;
                     bottom: 20px;
@@ -151,12 +186,15 @@ const WindowAC = () => {
                     cursor: pointer;
                     font-size: 16px;
                     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-                    transition: transform 0.3s ease-in-out;
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
                 }
-                
+
                 .back-to-top:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.2);
+                    box-shadow: 0px 6px 15px rgba(0, 91, 187, 0.5);
                 }
+                    
+
                 `}
             </style>
             <Footer />

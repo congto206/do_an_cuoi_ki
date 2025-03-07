@@ -127,49 +127,50 @@ const CeilingAC = () => {
         }
 
         /* Card sản phẩm - Glassmorphism */
+        /* Thẻ sản phẩm với hiệu ứng hover mượt */
         .product-card {
           background: rgba(255, 255, 255, 0.2);
           backdrop-filter: blur(10px);
           border-radius: 15px;
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-          transition: transform 0.3s ease-in-out;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
           height: 100%;
           display: flex;
           flex-direction: column;
         }
 
         .product-card:hover {
-          transform: scale(1.05);
+          transform: scale(1.06);
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+          background: rgba(255, 255, 255, 0.3);
         }
 
-        /* Định dạng nút */
-        .button-group {
-          display: flex;
-          justify-content: space-between;
-          gap: 10px;
-        }
-
+        /* Nút mua và chi tiết với hiệu ứng hover */
         .buy-btn, .details-btn {
           flex: 1;
           padding: 10px;
+          border-radius: 8px;
+          transition: background 0.3s ease, transform 0.2s ease;
         }
 
         .buy-btn {
-          background-color: #28a745;
+          background: linear-gradient(45deg, #28a745, #218838);
           border: none;
         }
 
         .buy-btn:hover {
-          background-color: #218838;
+          background: linear-gradient(45deg, #218838, #1c7430);
+          transform: scale(1.05);
         }
 
         .details-btn {
-          background-color: #007bff;
+          background: linear-gradient(45deg, #007bff, #0056b3);
           border: none;
         }
 
         .details-btn:hover {
-          background-color: #0056b3;
+          background: linear-gradient(45deg, #0056b3, #003d82);
+          transform: scale(1.05);
         }
 
         /* Nút cuộn lên đầu trang */
@@ -184,7 +185,65 @@ const CeilingAC = () => {
           border-radius: 5px;
           cursor: pointer;
           font-size: 14px;
+          transition: transform 0.3s ease;
         }
+
+        .back-to-top:hover {
+          background-color: #0056b3;
+          transform: scale(1.1) rotate(10deg);
+        }
+          /* Tạo khoảng cách giữa nút Details và Buy */
+        .button-group {
+          display: flex;
+          gap: 12px; /* Khoảng cách giữa các nút */
+          justify-content: center;
+        }
+
+        /* Hiệu ứng hover mới cho nút */
+        .buy-btn, .details-btn {
+          flex: 1;
+          padding: 12px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          border: none;
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Nút "Buy" */
+        .buy-btn {
+          background: linear-gradient(45deg, #28a745, #218838);
+          color: white;
+        }
+
+        .buy-btn:hover {
+          background: linear-gradient(45deg, #218838, #1c7430);
+          transform: scale(1.08);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Nút "Details" */
+        .details-btn {
+          background: linear-gradient(45deg, #007bff, #0056b3);
+          color: white;
+        }
+
+        .details-btn:hover {
+          background: linear-gradient(45deg, #0056b3, #003d82);
+          transform: scale(1.08);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hiệu ứng khi bấm giữ */
+        .buy-btn:active, .details-btn:active {
+          transform: scale(0.95);
+        }
+
+
         `}
       </style>
       <Footer />
