@@ -131,16 +131,17 @@ const Products = () => {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           }
         }
-        .product-card {
-          animation: pulse 3s infinite ease-in-out;
-          transition: all 0.3s ease-in-out;
+            .product-card {
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
         }
 
         .product-card:hover {
           transform: scale(1.05);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-          animation: none;
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
         }
+
 
         .product-content {
           margin-left: 20%;
