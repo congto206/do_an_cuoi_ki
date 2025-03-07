@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent";
 import Footer from "../components/Footer";
 
-const ContactPage = () => {
+const about = () => {
   return (
     <>
       <NavbarComponent />
@@ -119,4 +119,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default about;
