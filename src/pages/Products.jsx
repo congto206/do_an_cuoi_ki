@@ -100,21 +100,24 @@ const Products = () => {
         {`
         .products-container {
           display: flex;
-          margin-top: 70px;
+          min-height: 100vh;
+          margin-top: 70px; /* Để không che navbar */
         }
 
         .sidebar {
-          position: fixed;
-          top: 70px;
+          position: sticky;
+          top: 70px; /* Đảm bảo sát navbar */
           left: 0;
           width: 18%;
-          height: calc(100vh - 70px);
+          height: calc(100vh - 70px); /* Chiều cao trừ đi navbar */
           background-color: #f8f9fa;
           padding: 20px;
           color: #333;
-          overflow-y: auto;
+          overflow-y: auto; /* Cuộn nếu nội dung dài */
           box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
           border-right: 2px solid #ddd;
+          display: flex;
+          flex-direction: column;
         }
         
         @keyframes pulse {
@@ -144,8 +147,7 @@ const Products = () => {
 
 
         .product-content {
-          margin-left: 20%;
-          width: 80%;
+          flex-grow: 1;
           padding: 20px;
         }
         `}
