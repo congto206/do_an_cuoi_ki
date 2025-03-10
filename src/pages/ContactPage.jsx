@@ -4,7 +4,6 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent"; // Import Navbar
 import Footer from "../components/Footer";
 
-
 const ContactPage = () => {
   return (
     <>
@@ -41,14 +40,14 @@ const ContactPage = () => {
       {/* Main Contact Page */}
       <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
         <Container className="contact-container">
-          <h2 className="text-center">Liên hệ chúng tôi</h2>
+          <h2 className="text-center">Contact Us</h2>
 
-          {/* Google Map và Thông Tin Liên Hệ */}
+          {/* Google Map and Contact Information */}
           <Row>
             <Col md={6} className="text-center">
-              <h5 className="text-success">Hà Nội</h5>
+              <h5 className="text-success">Hanoi</h5>
               <iframe
-                title="Bản đồ"
+                title="Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.985287588934!2d105.77949717609838!3d21.032185780614374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab36f62c235f%3A0x868c008e1c842b02!2zOEEgxJDGsOG7nW5nIFRo4bq_dCBUaHV54buFLCBN4bu5IMSQw6xuaCwgQ-G7lWkgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3Q!5e0!3m2!1svi!2s!4v1709200000000!5m2!1svi!2s"
                 width="100%"
                 height="250"
@@ -69,38 +68,39 @@ const ContactPage = () => {
               </div>
               <div>
                 <FaMapMarkerAlt size={20} className="me-2 text-success" />
-                <strong>Address:</strong> 8A Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội 100000, Việt Nam
+                <strong>Address:</strong> 8A Ton That Thuyet, My Dinh, Cau Giay, Hanoi 100000, Vietnam
               </div>
             </Col>
           </Row>
 
-          {/* Form Nhập Thông Tin */}
+          {/* Contact Form */}
           <Row className="mt-4">
             <Col md={{ span: 8, offset: 2 }} className="contact-form">
-              <h5 className="text-center text-primary">Gửi tin nhắn cho chúng tôi</h5>
+              <h5 className="text-center text-primary">Send Us a Message</h5>
               <Form>
                 <Form.Group controlId="formName" className="mb-3">
-                  <Form.Label>Họ và tên</Form.Label>
-                  <Form.Control type="text" placeholder="Nhập họ và tên của bạn" />
+                  <Form.Label>Full Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your full name" />
                 </Form.Group>
                 <Form.Group controlId="formEmail" className="mb-3">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Nhập email của bạn" />
+                  <Form.Control type="email" placeholder="Enter your email" />
                 </Form.Group>
                 <Form.Group controlId="formMessage" className="mb-3">
-                  <Form.Label>Tin nhắn</Form.Label>
-                  <Form.Control as="textarea" rows={5} placeholder="Nhập tin nhắn của bạn" />
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={5} placeholder="Enter your message" />
                 </Form.Group>
                 <Button className="btn-custom" type="submit">
-                  Gửi
+                  Send
                 </Button>
               </Form>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Footer/>
       
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
