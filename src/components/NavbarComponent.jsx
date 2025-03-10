@@ -17,7 +17,7 @@ const NavbarComponent = () => {
             height="45"
             className="me-2 rounded-circle shadow-sm"
           />
-          <span className="brand-name">AirCon Store</span>
+          <span className="brand-name text-white">AirCon Store</span>
         </Navbar.Brand>
 
         {/* Toggle button */}
@@ -91,24 +91,24 @@ const NavbarComponent = () => {
           .custom-navbar {
             background: #343a40;
             padding: 12px 0;
-            box-shadow: 0px 4px 6px rgba(0, 1, 2, 0.1);
+            box-shadow: 0px 4px 6px rgb(239, 243, 245);
           }
 
           .custom-navbar .nav-link {
-            color: #ffffff;
+            color:rgb(239, 243, 245);
             font-size: 16px;
             font-weight: 500;
             transition: color 0.3s ease-in-out;
           }
 
           .custom-navbar .nav-link:hover {
-            color:rgb(14, 150, 230);
+            color:rgb(239, 243, 245);
           }
 
           .custom-navbar .active-link {
-            color: rgb(14, 150, 230) !important;
+            color: rgb(239, 243, 245) !important;
             font-weight: bold;
-            border-bottom: 2px solid rgb(14, 150, 230);
+            border-bottom: 2px solid rgb(239, 243, 245);
           }
 
           .custom-navbar .dropdown-menu {
@@ -121,12 +121,18 @@ const NavbarComponent = () => {
           }
 
           .custom-navbar .dropdown-item:hover {
-            background:rgb(14, 150, 230);
+            background:rgb(157, 183, 200);
           }
 
           .custom-navbar .active-dropdown {
-            background: rgb(14, 150, 230) !important;
+            background:rgb(157, 183, 200) !important;
             color: white !important;
+          }
+
+          .brand-name {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
           }
         `}
       </style>
