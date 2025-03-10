@@ -12,19 +12,19 @@ const Home = () => {
   useEffect(() => {
     const slider = productSliderRef.current;
     let scrollAmount = 0;
-    const scrollSpeed = 5; // Scroll speed
+    const scrollSpeed = 5; 
     const scrollStep = () => {
       if (slider) {
         slider.scrollLeft += scrollSpeed;
         scrollAmount += scrollSpeed;
         if (scrollAmount >= slider.scrollWidth / 2) {
           scrollAmount = 0;
-          slider.scrollLeft = 0; // Reset to start when fully scrolled
+          slider.scrollLeft = 0; 
         }
       }
     };
-    const interval = setInterval(scrollStep, 50); // Scroll frequency
-    return () => clearInterval(interval); // Clear interval when component unmounts
+    const interval = setInterval(scrollStep, 50); 
+    return () => clearInterval(interval); 
   }, []);
 
   return (
