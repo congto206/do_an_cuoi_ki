@@ -8,7 +8,7 @@ function Footer() {
         <Row>
           <Col md={4}>
             <h5>Contact</h5>
-            <p><FaMapMarkerAlt /> Address: 123 Đường ABC, Quận 1, TP.HCM</p>
+            <p><FaMapMarkerAlt />  8A Ton That Thuyet, My Dinh, Cau Giay, Hanoi 100000, Vietnams</p>
             <p><FaPhone /> Phone: (012) 345-6789</p>
             <p><FaEnvelope /> Email: info@congty.com</p>
           </Col>

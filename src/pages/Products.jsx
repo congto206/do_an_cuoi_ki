@@ -42,7 +42,7 @@ const ProductSection = ({ title, category }) => {
               <Card.Img variant="top" src={product.image} className="product-img" />
               <Card.Body className="d-flex flex-column text-center">
                 <Card.Title className="text-dark fw-bold">{product.name}</Card.Title>
-                <Card.Text className="text-danger fs-5 fw-bold">{product.price}</Card.Text>
+                <Card.Text className="text-danger fs-5 fw-bold">${product.price}</Card.Text>
                 <div className="mt-auto">
                   <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
                     🔍 Details
