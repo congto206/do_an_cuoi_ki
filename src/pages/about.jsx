@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import { FaCheckCircle } from "react-icons/fa";
 import NavbarComponent from "../components/NavbarComponent";
 import Footer from "../components/Footer";
 
-const about = () => {
+const About = () => {
   return (
     <>
       <NavbarComponent />
@@ -33,84 +33,48 @@ const about = () => {
               and the best customer experience.
             </p>
             <p className="text-muted">
-              Our mission is to bring cool, comfortable, and energy-efficient spaces to every household and business in Vietnam.
-              We offer a wide range of air conditioning solutions tailored to meet the needs of different environments, from homes to commercial spaces.
+              Our mission is to bring cool, comfortable, and energy-efficient spaces to every household and business.
+              We offer a wide range of air conditioning solutions tailored to meet the needs of different environments.
             </p>
             <p className="text-muted">
-              Our expert team is dedicated to providing top-tier support and consultation to ensure that our customers make the best choices
-              for their cooling needs. Whether you need a residential AC unit, a commercial installation, or a multi-zone solution,
-              we have the perfect product for you.
+              Our expert team is dedicated to providing top-tier support and consultation to ensure our customers make the best choices.
             </p>
           </Col>
         </Row>
       </Container>
 
-      {/* Featured Products */}
-      <Container className="py-5">
-        <h2 className="text-center fw-bold text-primary mb-4">Featured Products</h2>
-        <Row className="g-4">
-          <Col md={4}>
-            <Card className="shadow-sm border-0 text-center">
-              <Image src="/images/panasonic1.jpg" alt="Product 1" fluid className="rounded-top" />
-              <Card.Body>
-                <h5 className="fw-bold">Panasonic Air Conditioner</h5>
-              </Card.Body>
-            </Card>
+      {/* Why Choose Us */}
+      <Container className="py-5 bg-light rounded">
+        <h2 className="text-center fw-bold text-primary mb-4">Why Choose Us</h2>
+        <Row>
+          <Col md={4} className="text-center">
+            <FaCheckCircle size={50} className="text-success mb-3" />
+            <h5 className="fw-bold">High-Quality Products</h5>
+            <p className="text-muted">We provide only genuine and top-brand air conditioners.</p>
           </Col>
-          <Col md={4}>
-            <Card className="shadow-sm border-0 text-center">
-              <Image src="/images/amtran9.jpg" alt="Product 2" fluid className="rounded-top" />
-              <Card.Body>
-                <h5 className="fw-bold">Ceiling-mounted Air Conditioner</h5>
-              </Card.Body>
-            </Card>
+          <Col md={4} className="text-center">
+            <FaCheckCircle size={50} className="text-success mb-3" />
+            <h5 className="fw-bold">Professional Service</h5>
+            <p className="text-muted">Expert consultation and installation services.</p>
           </Col>
-          <Col md={4}>
-            <Card className="shadow-sm border-0 text-center">
-              <Image src="/images/funiki-1.jpg" alt="Product 3" fluid className="rounded-top" />
-              <Card.Body>
-                <h5 className="fw-bold">Funiki Air Conditioner</h5>
-              </Card.Body>
-            </Card>
+          <Col md={4} className="text-center">
+            <FaCheckCircle size={50} className="text-success mb-3" />
+            <h5 className="fw-bold">Customer Satisfaction</h5>
+            <p className="text-muted">We prioritize customer experience with excellent support.</p>
           </Col>
         </Row>
       </Container>
 
       {/* Brand Logos */}
       <Container className="py-5">
-        <h2 className="text-center fw-bold text-primary mb-4"> </h2>
-        <Row className="g-4 text-center">
-          <Col md={2}><Image src="/images/logopanasonic.jpg" alt="Brand 1" fluid /></Col>
-          <Col md={2}><Image src="/images/funikilogo.jpg" alt="Brand 2" fluid /></Col>
-          <Col md={2}><Image src="/images/greelogo.jpg" alt="Brand 3" fluid /></Col>
-          <Col md={2}><Image src="/images/samsunglogo.jpg" alt="Brand 4" fluid /></Col>
-          <Col md={2}><Image src="/images/toshibalogo.jpg" alt="Brand 5" fluid /></Col>
-          <Col md={2}><Image src="/images/daikinlogo.jpg" alt="Brand 6" fluid /></Col>
-        </Row>
-      </Container>
-
-      {/* Contact Information */}
-      <Container className="py-5">
-        <h2 className="text-center fw-bold text-primary mb-4">Contact Information</h2>
-        <Row className="justify-content-center">
-          <Col md={6}>
-            <Card className="shadow-sm border-0 p-4 text-center">
-              <Card.Body>
-                <div className="mb-3 d-flex align-items-center justify-content-center">
-                  <FaPhone size={20} className="me-3 text-primary" />
-                  <strong>Hotline:</strong> +84 123 456 789
-                </div>
-                <div className="mb-3 d-flex align-items-center justify-content-center">
-                  <FaEnvelope size={20} className="me-3 text-danger" />
-                  <strong>Email:</strong> support@maylanh.com
-                </div>
-                <div className="d-flex align-items-center justify-content-center">
-                  <FaMapMarkerAlt size={20} className="me-3 text-success" />
-                  <strong>Address:</strong> 8A Ton That Thuyet, My Dinh, Cau Giay, Hanoi 100000, Vietnam
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
+        <h2 className="text-center fw-bold text-primary mb-4">Our Trusted Brands</h2>
+        <Row className="g-4 text-center justify-content-center">
+          <Col xs={6} sm={4} md={2}><Image src="/images/logopanasonic.jpg" alt="Panasonic" fluid className="rounded-circle shadow-sm" /></Col>
+          <Col xs={6} sm={4} md={2}><Image src="/images/funikilogo.jpg" alt="Funiki" fluid className="rounded-circle shadow-sm" /></Col>
+          <Col xs={6} sm={4} md={2}><Image src="/images/greelogo.jpg" alt="Gree" fluid className="rounded-circle shadow-sm" /></Col>
+          <Col xs={6} sm={4} md={2}><Image src="/images/samsunglogo.jpg" alt="Samsung" fluid className="rounded-circle shadow-sm" /></Col>
+          <Col xs={6} sm={4} md={2}><Image src="/images/toshibalogo.jpg" alt="Toshiba" fluid className="rounded-circle shadow-sm" /></Col>
+          <Col xs={6} sm={4} md={2}><Image src="/images/daikinlogo.jpg" alt="Daikin" fluid className="rounded-circle shadow-sm" /></Col>
         </Row>
       </Container>
 
@@ -119,4 +83,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
