@@ -5,9 +5,9 @@
     "brand": "Daikin",
     "image": "/images/daikin1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
+      "/images/daikin1.1.jpg",
+      "/images/daikin1.2.jpg",
+      "/images/daikin1.3.jpg",
       "/images/dai1.4.jpg"
     ],
     "price": 408,
@@ -16,8 +16,15 @@
     "category": "split",
     "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1200W"
+    "power_consumption": "1200W",
+    "details": [
+      { "title": "Cooling Power", "content": "12000 BTU, covers up to 500 sq. ft." },
+      { "title": "Energy Efficiency", "content": "Energy Star certified, eco-friendly mode." },
+      { "title": "Noise Level", "content": "Ultra-quiet operation with only 40 dB." },
+      { "title": "Smart Features", "content": "WiFi control, voice assistant compatibility." }
+    ]
   },
+  
 
   {
     "id": 2,
@@ -919,9 +926,9 @@
     "brand": "Daikin",
     "image": "/images/daikin1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
+      "/images/daikin1.1.jpg",
+      "/images/daikin1.2.jpg",
+      "/images/daikin1.3.jpg",
       "/images/dai1.4.jpg"
     ],
     "price": 500,

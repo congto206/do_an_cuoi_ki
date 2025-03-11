@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Button, Card, ListGroup, Row, Col, Image } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
@@ -12,6 +12,16 @@ const ProductDetail = () => {
   const { addToCart } = useCart();
   const product = products.find((p) => p.id === parseInt(id));
   const [selectedImage, setSelectedImage] = useState(product?.image);
+  const [suggestedProducts, setSuggestedProducts] = useState([]);
+
+  useEffect(() => {
+    if (product) {
+      const related = products
+        .filter((p) => p.category === product.category && p.id !== product.id)
+        .slice(0, 4);
+      setSuggestedProducts(related);
+    }
+  }, [product]);
 
   if (!product)
     return (
@@ -24,6 +34,22 @@ const ProductDetail = () => {
   const handleBuyNow = () => {
     addToCart({ ...product, quantity: 1 });
     navigate("/cart");
+  };
+
+  const handleReplaceSuggestedProduct = (index) => {
+    const remainingProducts = products.filter(
+      (p) => p.category === product.category &&
+             p.id !== product.id &&
+             !suggestedProducts.some(sp => sp.id === p.id)
+    );
+    if (remainingProducts.length > 0) {
+      const newProduct = remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
+      setSuggestedProducts((prev) => {
+        const updated = [...prev];
+        updated[index] = newProduct;
+        return updated;
+      });
+    }
   };
 
   return (
@@ -77,6 +103,34 @@ const ProductDetail = () => {
               <Button variant="success" onClick={handleBuyNow}>🛒 Buy Now</Button>
             </div>
           </Col>
+        </Row>
+
+        {/* Thông tin chi tiết sản phẩm */}
+        <h4 className="mt-5">Product Information</h4>
+        <ListGroup className="mb-4">
+          {product.details && product.details.map((detail, index) => (
+            <ListGroup.Item key={index}>
+              <strong>{detail.title}:</strong> {detail.content}
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+        
+
+        {/* Danh sách sản phẩm đề xuất */}
+        <h4 className="mt-5">Related Products</h4>
+        <Row>
+          {suggestedProducts.map((related, index) => (
+            <Col key={related.id} xs={6} md={3} className="text-center">
+              <Card className="shadow-sm border-0">
+                <Card.Img variant="top" src={related.image} style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }} 
+                  onClick={() => handleReplaceSuggestedProduct(index)} />
+                <Card.Body>
+                  <Card.Title className="fs-6">{related.name}</Card.Title>
+                  <Button variant="outline-primary" size="sm" onClick={() => navigate(`/product/${related.id}`)}>View</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
       <Footer />
