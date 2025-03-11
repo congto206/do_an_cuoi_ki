@@ -53,7 +53,7 @@ const ProductSection = ({ title, category }) => {
       </Row>
       <div className="text-center mt-3">
         <Button variant="success" className="btn-view-all" onClick={() => navigate(`/products/${category}`)}>
-          🔽 Xem tất cả
+           Xem tất cả
         </Button>
       </div>
     </div>
@@ -126,14 +126,14 @@ const Products = () => {
           font-weight: bold;
           padding: 10px 20px;
           border-radius: 5px;
-          background-color: #28a745;
+          background-color: #C0C0C0;
           color: white;
           border: none;
           transition: background-color 0.3s ease-in-out, transform 0.2s;
         }
 
         .btn-view-all:hover {
-          background-color: #218838;
+          background-color: #808080;
           transform: scale(1.05);
         }
         `}

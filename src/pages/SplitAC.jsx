@@ -45,7 +45,7 @@ const SplitAC= () => {
         <>
             <NavbarComponent />
             <Container className="mt-5">
-                <h2 className="text-center text-primary fw-bold mb-4">Split AC</h2>
+            <h2 className="text-center fw-bold mb-4" style={{ color: "#6c757d" }}>Split AC</h2>
                 <Row className="mb-4">
                     <Col md={6} className="mb-2">
                         <Form.Control

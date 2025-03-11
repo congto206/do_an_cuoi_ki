@@ -18,7 +18,7 @@ const ProductDetail = () => {
     if (product) {
       const related = products
         .filter((p) => p.category === product.category && p.id !== product.id)
-        .slice(0, 4);
+        .slice(0, 4); // Lấy 4 sản phẩm liên quan
       setSuggestedProducts(related);
     }
   }, [product]);
@@ -104,17 +104,6 @@ const ProductDetail = () => {
             </div>
           </Col>
         </Row>
-
-        {/* Thông tin chi tiết sản phẩm */}
-        <h4 className="mt-5">Product Information</h4>
-        <ListGroup className="mb-4">
-          {product.details && product.details.map((detail, index) => (
-            <ListGroup.Item key={index}>
-              <strong>{detail.title}:</strong> {detail.content}
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
-        
 
         {/* Danh sách sản phẩm đề xuất */}
         <h4 className="mt-5">Related Products</h4>

@@ -16,13 +16,7 @@
     "category": "split",
     "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1200W",
-    "details": [
-      { "title": "Cooling Power", "content": "12000 BTU, covers up to 500 sq. ft." },
-      { "title": "Energy Efficiency", "content": "Energy Star certified, eco-friendly mode." },
-      { "title": "Noise Level", "content": "Ultra-quiet operation with only 40 dB." },
-      { "title": "Smart Features", "content": "WiFi control, voice assistant compatibility." }
-    ]
+    "power_consumption": "1200W"
   },
   
 
@@ -583,10 +577,10 @@
     "brand":"LG",
     "image": "/images/cuaso1.jpg",
     "extraImages": [
-      "/images/cuaso1.1.webp",
-      "/images/cuaso1.2.jpeg",
-      "/images/cuaso1.3.webp",
-      "/images/cuaso1.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 1200,
     "description": "Auto restart will automatically turn the unit back on when power is restored after an outage",
@@ -602,10 +596,10 @@
     "brand":"Durastar",
     "image": "/images/cuaso2.jpg",
     "extraImages": [
-      "/images/cuaso2.1.webp",
-      "/images/cuaso2.2.webp",
-      "/images/cuaso2.3.jpeg",
-      "/images/cuaso2.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 466,
     "description": "window Air Conditioner with HeaterWhite",
@@ -621,9 +615,10 @@
     "brand":"Senville",
     "image": "/images/cuaso3.webp",
     "extraImages": [
-      "/images/cuaso3.1.webp",
-      "/images/cuaso3.2.webp",
-      "/images/cuaso3.3.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 479,
     "description": "window Air Conditioner with HeaterWhite",
@@ -639,12 +634,12 @@
     "brand":"Whirlpool",
     "image": "/images/cuaso4.webp",
     "extraImages": [
-      "/images/cuaso4.1.webp",
-      "/images/cuaso4.2.webp",
-      "/images/cuaso4.3.webp",
-      "/images/cuaso4.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
-    "price": 380,
+    "price": 124,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
     "category":"window",
@@ -658,10 +653,10 @@
     "brand":"HomePointe ",
     "image": "/images/cuaso5.webp",
     "extraImages": [
-      "/images/cuaso5.1.webp",
-      "/images/cuaso5.2.webp",
-      "/images/cuaso5.3.webp",
-      "/images/cuaso5.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 672,
     "description": "window Air Conditioner with HeaterWhite",
@@ -677,10 +672,10 @@
     "brand":"Midea ",
     "image": "/images/cuaso6.webp",
     "extraImages": [
-      "/images/cuaso6.1.webp",
-      "/images/cuaso6.2.webp",
-      "/images/cuaso6.3.webp",
-      "/images/cuaso6.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
@@ -696,10 +691,10 @@
     "brand":"Midea ",
     "image": "/images/cuaso7.webp",
     "extraImages": [
-      "/images/cuaso7.1.webp",
-      "/images/cuaso7.2.webp",
-      "/images/cuaso7.3.webp",
-      "/images/cuaso7.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 750,
     "description": "window Air Conditioner with HeaterWhite",
@@ -715,10 +710,10 @@
     "brand":"Frigidaire ",
     "image": "/images/cuaso8.webp",
     "extraImages": [
-      "/images/cuaso8.1.webp",
-      "/images/cuaso8.2.webp",
-      "/images/cuaso8.3.webp",
-      "/images/cuaso8.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 990,
     "description": "window Air Conditioner with HeaterWhite",
@@ -734,10 +729,10 @@
     "brand":"Winado  ",
     "image": "/images/cuaso9.webp",
     "extraImages": [
-      "/images/cuaso9.1.webp",
-      "/images/cuaso9.2.webp",
-      "/images/cuaso9.3.webp",
-      "/images/cuaso9.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 783,
     "description": "window Air Conditioner with HeaterWhite",
@@ -753,9 +748,10 @@
     "brand":"GE ",
     "image": "/images/cuaso10.webp",
     "extraImages": [
-      "/images/cuaso10.1.webp",
-      "/images/cuaso10.2.webp",
-      "/images/cuaso10.3.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 728,
     "description": "window Air Conditioner with HeaterWhite",
@@ -771,10 +767,10 @@
     "brand":"Hisense ",
     "image": "/images/cuaso11.webp",
     "extraImages": [
-      "/images/cuaso11.1.webp",
-      "/images/cuaso11.2.webp",
-      "/images/cuaso11.3.webp",
-      "/images/cuaso11.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 432,
     "description": "window Air Conditioner with HeaterWhite",
@@ -790,10 +786,10 @@
     "brand":"mollie  ",
     "image": "/images/cuaso12.webp",
     "extraImages": [
-     "/images/cuaso12.1.webp",
-      "/images/cuaso12.2.webp",
-      "/images/cuaso12.3.webp",
-      "/images/cuaso12.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
@@ -809,10 +805,10 @@
     "brand":"Comfort-Aire",
     "image": "/images/cuaso13.webp",
     "extraImages": [
-      "/images/cuaso13.1.webp",
-      "/images/cuaso13.2.webp",
-      "/images/cuaso13.3.webp",
-      "/images/cuaso13.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 423,
     "description": "window Air Conditioner with HeaterWhite",
@@ -828,10 +824,10 @@
     "brand":"Amana",
     "image": "/images/cuaso14.webp",
     "extraImages": [
-      "/images/cuaso14.1.webp",
-      "/images/cuaso14.2.jpeg",
-      "/images/cuaso14.3.webp",
-      "/images/cuaso14.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 740,
     "description": "window Air Conditioner with HeaterWhite",
@@ -845,12 +841,12 @@
     "id": 49,
     "name": "TCL 6,000 BTU window Air Conditioner, 250 sq. ft., LED Display, Included Remote, Black, W6W32-B",
     "brand":"TCL",
-    "image": "/images/cuaso15.webp",
+    "image": "/images/cuaso14.webp",
     "extraImages": [
-      "/images/cuaso15.1.webp",
-      "/images/cuaso15.2.jpeg",
-      "/images/cuaso15.3.webp",
-      "/images/cuaso15.4.webp"
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
     ],
     "price": 1202,
     "description": "window Air Conditioner with HeaterWhite",
@@ -867,9 +863,9 @@
     "brand": "Daikin",
     "image": "/images/daikin3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
+      "/images/daikin1.1.jpg",
+      "/images/daikin1.2.jpg",
+      "/images/daikin1.3.jpg",
       "/images/dai1.4.jpg"
     ],
     "price": 600,
@@ -886,7 +882,7 @@
     "brand":"Amana",
     "image": "/images/cuaso14.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
+      "/images/daikin1.1.jpg",
       "/images/dai1.2.jpg",
       "/images/dai1.3.jpg",
       "/images/dai1.4.jpg"
