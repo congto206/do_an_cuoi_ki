@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
+import productsData from "../data/products.json";
 import Footer from "../components/Footer";
-import products from "../data/products.json"; // ✅ Import dữ liệu từ file JSON
 
-const SplitAC = () => {
+const SplitAC= () => {
     const navigate = useNavigate();
-    const [searchTerm, setSearchTerm] = useState("");
-    const [selectedPrice, setSelectedPrice] = useState("All");
     const [showButton, setShowButton] = useState(false);
+    const [searchName, setSearchName] = useState("");
+    const [selectedPrice, setSelectedPrice] = useState("all");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,172 +23,178 @@ const SplitAC = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    // ✅ Lọc sản phẩm theo từ khóa và giá
-    const filteredProducts = products
-        .filter(product => product.category === "split")
-        .filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
-        .filter(product => {
-            if (selectedPrice === "All") return true;
-            return (typeof product.price === "string" ? parseFloat(product.price.replace("$", "")) : product.price) 
-       <= parseFloat(selectedPrice);
-        });
+    const priceFilters = {
+        all: Infinity,
+        "500": 500,
+        "750": 750,
+        "1000": 1000,
+    };
+
+    const filteredProducts = productsData.filter(product => {
+        const productPrice = Number(product.price);
+        const maxPrice = priceFilters[selectedPrice] || Infinity;
+
+        return (
+            product.category === "split" &&
+            product.name.toLowerCase().includes(searchName.toLowerCase()) &&
+            productPrice <= maxPrice
+        );
+    });
 
     return (
         <>
             <NavbarComponent />
-            <Container className="mt-4">
-                <h2 className="text-center text-primary fw-bold">Split AC</h2>
-
-                {/* ✅ Ô tìm kiếm sản phẩm & Lọc theo giá */}
-                <Row className="mb-3">
-                    <Col md={6}>
+            <Container className="mt-5">
+                <h2 className="text-center text-primary fw-bold mb-4">Split AC</h2>
+                <Row className="mb-4">
+                    <Col md={6} className="mb-2">
                         <Form.Control
                             type="text"
                             placeholder="🔍 Search products..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="search-bar"
+                            value={searchName}
+                            onChange={(e) => setSearchName(e.target.value)}
                         />
                     </Col>
                     <Col md={6}>
-                        <Form.Select
-                            value={selectedPrice}
-                            onChange={(e) => setSelectedPrice(e.target.value)}
-                            className="filter-dropdown"
-                        >
-                            <option value="All">All Prices</option>
+                        <Form.Select value={selectedPrice} onChange={(e) => setSelectedPrice(e.target.value)}>
+                            <option value="all">All Prices</option>
                             <option value="500">Up to $500</option>
                             <option value="750">Up to $750</option>
                             <option value="1000">Up to $1000</option>
                         </Form.Select>
                     </Col>
                 </Row>
-
-                <Row className="mt-4">
-                    {filteredProducts.length > 0 ? (
-                        filteredProducts.map((product) => (
-                            <Col key={product.id} lg={4} md={6} sm={12} className="mb-4">
-                                <Card className="shadow-lg border-0 product-card">
+                <Row>
+                    {filteredProducts.map((product) => (
+                        <Col key={product.id} lg={4} md={6} sm={12} className="mb-4">
+                            <Card className="product-card border-0 shadow-sm">
+                                <div className="card-img-container">
                                     <Card.Img variant="top" src={product.image} className="product-img" />
-                                    <Card.Body className="text-center d-flex flex-column justify-content-between">
-                                        <div>
-                                            <Card.Title className="fw-bold">{product.name}</Card.Title>
-                                            <Card.Text className="text-danger fs-5 fw-bold">${product.price}</Card.Text>
-                                        </div>
-                                        <div className="d-flex justify-content-center mt-auto">
-                                            <Button 
-                                                variant="primary" 
-                                                className="m-1 btn-hover-detail"
-                                                onClick={() => navigate(`/product/${product.id}`)}
-                                            >
-                                                🔍 Details
-                                            </Button>
-                                            <Button 
-                                                variant="success" 
-                                                className="m-1 btn-hover-buy"
-                                                onClick={() => navigate(`/product/${product.id}`)}
-                                            >
-                                                🛒 Buy
-                                            </Button>
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        ))
-                    ) : (
-                        <p className="text-center text-muted">No products found.</p>
-                    )}
+                                </div>
+                                <Card.Body className="text-center d-flex flex-column">
+                                    <Card.Title className="fw-bold text-dark flex-grow-1">{product.name}</Card.Title>
+                                    <Card.Text className="text-danger fs-5 fw-bold">${product.price}</Card.Text>
+                                    <div className="d-flex justify-content-center gap-2 mt-auto">
+                                        <Button variant="outline-primary" className="btn-animate" onClick={() => navigate(`/product/${product.id}`)}>
+                                            🔍 Details
+                                        </Button>
+                                        <Button variant="success" className="btn-animate" onClick={() => navigate(`/product/${product.id}`)}>
+                                            🛒 Buy
+                                        </Button>
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
 
             {showButton && (
-                <button onClick={scrollToTop} className="back-to-top">⬆️</button>
+                <button onClick={scrollToTop} className="back-to-top">
+                    ⬆️
+                </button>
             )}
 
             <style>
                 {`
-                .search-bar, .filter-dropdown {
-                    width: 100%;
-                    padding: 10px;
-                    font-size: 16px;
-                    border-radius: 8px;
-                    border: 1px solid #ccc;
-                    outline: none;
-                    transition: border 0.3s;
-                }
-                .search-bar:focus, .filter-dropdown:focus {
-                    border: 2px solid #7a5af5;
-                    box-shadow: 0 0 8px rgba(122, 90, 245, 0.5);
-                }
-                .product-img {
-                    height: 250px;
-                    object-fit: cover;
-                    border-radius: 10px;
-                }
                 .product-card {
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    min-height: 100%;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
-                }
-                .product-card {
+                    justify-content: space-between;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    min-height: 100%;
-                    display: flex;
-                    flex-direction: column;
                     border-radius: 10px;
                     overflow: hidden;
                 }
 
                 .product-card:hover {
                     transform: scale(1.05);
-                    box-shadow: 0px 8px 20px rgba(122, 90, 245, 0.4);
+                    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
                 }
 
-                /* Ảnh sản phẩm */
-                .product-img {
+                /* Hình ảnh phóng to nhẹ khi hover */
+                .card-img-container {
                     height: 250px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .product-img {
+                    width: 100%;
+                    height: 100%;
                     object-fit: cover;
-                    border-radius: 10px;
-                    transition: transform 0.3s ease, filter 0.3s ease;
+                    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
                 }
 
                 .product-card:hover .product-img {
                     transform: scale(1.1);
-                    filter: brightness(1.2);
+                    opacity: 0.9;
                 }
 
-                /* Nút hover với hiệu ứng gradient */
-                .btn-hover-detail, .btn-hover-buy {
+                /* Nút chung */
+                .btn-animate {
                     transition: all 0.3s ease-in-out;
                     border-radius: 8px;
                     font-weight: bold;
-                    padding: 10px 18px;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
+                    padding: 10px 16px;
                 }
 
-                /* Hover - đổi màu gradient + tăng kích thước */
-                .btn-hover-detail:hover {
+                /* Nút "Details" */
+                .btn-animate.btn-outline-primary {
+                    border: 2px solid #007bff;
+                    color: #007bff;
+                    background: white;
+                }
+
+                .btn-animate.btn-outline-primary:hover {
+                    background: rgba(0, 123, 255, 0.1);
+                    color: #0056b3;
+                    border-color: #0056b3;
+                    transform: scale(1.08);
+                    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+                }
+
+                /* Nút "Buy" */
+                .btn-animate.btn-success {
+                    background: #28a745;
+                    border: 2px solid #28a745;
+                    color: white;
+                }
+
+                .btn-animate.btn-success:hover {
+                    background: #218838;
+                    border-color: #1e7e34;
+                    transform: scale(1.08);
+                    box-shadow: 0px 4px 12px rgba(40, 167, 69, 0.4);
+                }
+
+
+                /* Nút quay lại đầu trang */
+                .back-to-top {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
                     background: linear-gradient(135deg, #007bff, #0056b3);
-                    transform: translateY(-3px) scale(1.05);
-                    box-shadow: 0px 5px 15px rgba(0, 86, 179, 0.4);
-                    color: #fff;
+                    color: white;
+                    border: none;
+                    padding: 12px 16px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 16px;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
                 }
 
-                .btn-hover-buy:hover {
-                    background: linear-gradient(135deg, #28a745, #1e7e34);
-                    transform: translateY(-3px) scale(1.05);
-                    box-shadow: 0px 5px 15px rgba(30, 126, 52, 0.4);
-                    color: #fff;
+                .back-to-top:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0px 6px 15px rgba(0, 91, 187, 0.5);
                 }
+                    
 
-                /* Hiệu ứng khi bấm */
-                .btn-hover-detail:active, .btn-hover-buy:active {
-                    transform: scale(0.95);
-                    box-shadow: none;
-                }
                 `}
             </style>
             <Footer />
