@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { Container, Card, Button, Carousel } from "react-bootstrap";
+import React, { useRef } from "react";
+import { Container, Card, Button, Carousel, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
 import products from "../data/products.json";
@@ -8,24 +8,6 @@ import Footer from "../components/Footer";
 const Home = () => {
   const navigate = useNavigate();
   const productSliderRef = useRef(null);
-
-  useEffect(() => {
-    const slider = productSliderRef.current;
-    let scrollAmount = 0;
-    const scrollSpeed = 5; 
-    const scrollStep = () => {
-      if (slider) {
-        slider.scrollLeft += scrollSpeed;
-        scrollAmount += scrollSpeed;
-        if (scrollAmount >= slider.scrollWidth / 2) {
-          scrollAmount = 0;
-          slider.scrollLeft = 0; 
-        }
-      }
-    };
-    const interval = setInterval(scrollStep, 50); 
-    return () => clearInterval(interval); 
-  }, []);
 
   return (
     <>
@@ -44,14 +26,13 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
 
-      {/* Featured Products */}
+      {/* Best Selling Products */}
       <Container className="mt-5">
-        <h2 className="text-center fw-bold text-primary">🔥 Featured Products 🔥</h2>
-        <p className="text-center text-muted">Top quality, outstanding performance</p>
-        <div ref={productSliderRef} className="product-slider mt-4">
-          {products.slice(0, 62).map((product) => (
-            <div key={product.id} className="product-card-container">
-              <Card className="product-card border-0">
+        <h2 className="text-center fw-bold text-black">🔥 Best Selling Products 🔥</h2>
+        <Row className="justify-content-center mt-4">
+          {products.slice(0, 8).map((product) => (
+            <Col key={product.id} md={3} sm={6} className="d-flex justify-content-center mb-4">
+              <Card className="product-card border-0 shadow-sm">
                 <div className="product-img-container">
                   <Card.Img variant="top" src={product.image} className="product-image" />
                 </div>
@@ -67,12 +48,10 @@ const Home = () => {
                   </Button>
                 </Card.Body>
               </Card>
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </Container>
-
-  
 
       <style>
         {`
@@ -83,27 +62,13 @@ const Home = () => {
           border-radius: 12px;
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
         }
-        .product-slider {
-          display: flex;
-          overflow-x: hidden;
-          gap: 20px;
-          padding-bottom: 10px;
-          scrollbar-width: none;
-          white-space: nowrap;
-          scroll-behavior: smooth;
-        }
-        .product-slider::-webkit-scrollbar {
-          display: none;
-        }
-        .product-card-container {
-          min-width: 250px;
-          flex-shrink: 0;
-        }
         .product-card {
           border-radius: 12px;
           overflow: hidden;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           background: white;
+          width: 100%;
+          max-width: 250px;
         }
         .product-card:hover {
           transform: translateY(-10px);
@@ -127,6 +92,16 @@ const Home = () => {
         .view-details-btn:hover {
           background-color: #007bff;
           color: white;
+        }
+        
+        /* Brighter logo */
+        .navbar-brand img {
+          filter: brightness(1.2);
+        }
+        
+        /* Underline menu on hover */
+        .nav-link:hover {
+          text-decoration: underline;
         }
         `}
       </style>
