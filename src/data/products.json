@@ -4,7 +4,13 @@
     "name": "Daikin Inverter 1 HP ATKB25YVMV",
     "brand": "Daikin",
     "image": "/images/daikin1.jpg",
-    "price": 672,
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
+    "price": 500,
     "description": "Inverter technology saves energy, fast cooling.",
     "stock": 10,
     "category": "split",
@@ -12,11 +18,18 @@
     "warranty": "2 years",
     "power_consumption": "1200W"
   },
+
   {
     "id": 2,
     "name": "Daikin Inverter 1.5 HP ATKF35XVMV",
     "brand": "Daikin",
     "image": "/images/daikin2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 343,
     "description": "Antibacterial, deodorizing, smooth operation.",
     "stock": 15,
@@ -30,6 +43,12 @@
     "name": "Daikin Inverter 1 HP ATKF25ZVMV",
     "brand": "Daikin",
     "image": "/images/daikin3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 600,
     "description": "Fast cooling, optimal energy saving.",
     "stock": 8,
@@ -43,6 +62,12 @@
     "name": "LG Inverter 1.5 HP V13WIN1",
     "brand": "LG",
     "image": "/images/lg1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 223,
     "description": "WindFree technology prevents direct airflow.",
     "stock": 12,
@@ -56,6 +81,12 @@
     "name": "LG Inverter 1.5 HP IDC12M1",
     "brand": "LG",
     "image": "/images/lg2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 400,
     "description": "Fast cooling, mold-resistant filter.",
     "stock": 20,
@@ -69,6 +100,12 @@
     "name": "LG Inverter 1 HP V10API1",
     "brand": "LG",
     "image": "/images/lg3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 650,
     "description": "Durable operation, energy saving.",
     "stock": 9,
@@ -82,6 +119,12 @@
     "name": "Mitsubishi Electric 2 HP",
     "brand": "Panasonic",
     "image": "/images/panasonic1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1029,
     "description": "Deodorizing, fast cooling, energy saving.",
     "stock": 17,
@@ -95,6 +138,12 @@
     "name": "Toshiba Inverter 1HP",
     "brand": "Panasonic",
     "image": "/images/panasonic2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 500,
     "description": "Modern design, stable performance.",
     "stock": 13,
@@ -108,6 +157,12 @@
     "name": "Daikin Inverter 1.5 HP",
     "brand": "Panasonic",
     "image": "/images/panasonic3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 520,
     "description": "Advanced energy-saving technology.",
     "stock": 9,
@@ -121,6 +176,12 @@
     "name": "Panasonic Inverter 1HP",
     "brand": "LG",
     "image": "/images/sanphamamtuong1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 630,
     "description": "Fast cooling, energy-saving mode.",
     "stock": 6,
@@ -134,6 +195,12 @@
     "name": "LG DualCool 2HP",
     "brand": "LG",
     "image": "/images/sanphamamtuong2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 410,
     "description": "Affordable price, suitable for small rooms.",
     "stock": 6,
@@ -147,6 +214,12 @@
     "name": "Mitsubishi Electric 2 HP",
     "brand": "LG",
     "image": "/images/sanphamamtuong3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 460,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -160,6 +233,12 @@
     "name": "Samsung Inverter 3.5 HP Ceiling Air Conditioner AC100TN4DKC/EA (3 Phase)",
     "brand": "LG",
     "image": "/images/sanphamamtuong4.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 460,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -173,6 +252,12 @@
     "name": "LG Inverter 2 HP One-Way Ceiling Air Conditioner ZTNQ18GTLA0",
     "brand": "LG",
     "image": "/images/sanphamamtuong5.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 460,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -186,6 +271,12 @@
     "name": "Samsung Inverter 3.5 HP Ceiling Air Conditioner AC100TN4DKC/EA",
     "brand": "LG",
     "image": "/images/sanphamamtuong6.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 460,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -199,6 +290,12 @@
     "name": "Funiki Inverter Air Conditioner 1 HP HIC09TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
@@ -212,6 +309,12 @@
     "name": "Funiki Inverter Air Conditioner 2 HP HIC18TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
@@ -225,6 +328,12 @@
     "name": "Funiki Inverter Air Conditioner 1.5 HP HIC12TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
@@ -238,6 +347,12 @@
     "name": "Funiki Inverter Air Conditioner 2.5 HP HIC24TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-4.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
@@ -251,6 +366,12 @@
     "name": "Toshiba Inverter Air Conditioner 1.5 HP RAS-H13Z2KCVG-V",
     "brand": "Toshiba",
     "image": "/images/toshiba1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Gentle airflow protects skin with HadaCare. Self-cleaning function.",
     "stock": 15,
@@ -264,6 +385,12 @@
     "name": "Casper Inverter Air Conditioner 1 HP GC-09IB36",
     "brand": "Casper",
     "image": "/images/casper1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -277,6 +404,12 @@
     "name": "Casper Inverter Air Conditioner 1.5 HP GC-12IB36",
     "brand": "Casper",
     "image": "/images/casper2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -290,6 +423,12 @@
     "name": "LG Ceiling Cassette Air Conditioner 1.5 HP ZTNQ12GULA0",
     "brand": "LG",
     "image": "/images/amtran7.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -303,6 +442,12 @@
     "name": "Samsung 360° Cassette Air Conditioner 4 HP AC120TN4PKC/EA",
     "brand": "Samsung",
     "image": "/images/amtran8.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -316,6 +461,12 @@
     "name": "Nagakawa Ceiling Cassette Air Conditioner 5 HP NT-C50R1T20",
     "brand": "Nagakawa",
     "image": "/images/amtran9.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -329,6 +480,12 @@
     "name": "Nagakawa Ceiling Cassette Air Conditioner 4 HP NT-C36R1T20",
     "brand": "Nagakawa",
     "image": "/images/amtran10.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -342,6 +499,12 @@
     "name": "Midea Ceiling Cassette Air Conditioner 5 HP MCD1-50HRDN1s",
     "brand": "Midea",
     "image": "/images/amtran11.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -355,6 +518,12 @@
     "name": "Gree Ceiling Cassette Air Conditioner 2.5 HP GU71T/A‐K/GUL71W/A‐K",
     "brand": "Gree",
     "image": "/images/amtran12.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -368,6 +537,12 @@
     "name": "LG Inverter 5 HP Ceiling Air Conditioner ATNQ48GMLE7",
     "brand": "LG",
     "image": "/images/amtran13.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection mechanism with intelligent leak detection",
     "stock": 15,
@@ -381,6 +556,12 @@
     "name": "Panasonic Inverter 3 HP Ceiling Air Conditioner S-2430PU3H / U-30PR1H5",
     "brand": "LG",
     "image": "/images/amtran15.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 4,
     "description": "Dual safety protection mechanism with intelligent leak detection",
     "stock": 15,
@@ -394,6 +575,12 @@
     "name": "LG 24,500 BTU 1550 Sq ft 230V window Air Conditioner, LW2524RD",
     "brand":"LG",
     "image": "/images/cuaso1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1200,
     "description": "Auto restart will automatically turn the unit back on when power is restored after an outage",
     "stock":15,
@@ -407,6 +594,12 @@
     "name": "Durastar Drwhc122xna1 12,000 BTU 230V window Air Conditioner - White",
     "brand":"Durastar",
     "image": "/images/cuaso2.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 466,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -420,6 +613,12 @@
     "name": "Senville 5,000 BTU window Air Conditioner, Up to 150 sq. ft., Mechanical Control, Washable Filter",
     "brand":"Senville",
     "image": "/images/cuaso3.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 479,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -433,6 +632,12 @@
     "name": "Whirlpool New 10,000 BTU 115V 450 Sq ft window-Mounted Air Conditioner with Remotel, White, WHAW101CW",
     "brand":"Whirlpool",
     "image": "/images/cuaso4.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 124,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -446,6 +651,12 @@
     "name": "HomePointe 5,000 BTU Mechanical window Air Conditioner w/ Dial Temp Control",
     "brand":"HomePointe ",
     "image": "/images/cuaso5.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 672,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -459,6 +670,12 @@
     "name": "Midea 12,000 BTU Smart Inverter U-Shaped window Air Conditioner, 35% Energy Savings, Quiet, Up to 550 Sq. ft., MAW12V1QWT, New",
     "brand":"Midea ",
     "image": "/images/cuaso6.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -472,6 +689,12 @@
     "name": "Midea 8,000 BTU Smart Inverter U-Shaped window Air Conditioner, Save 35% Energy, Quiet, 350 Sq. ft., MAW08V1QWT-T, New",
     "brand":"Midea ",
     "image": "/images/cuaso7.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 750,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -485,6 +708,12 @@
     "name": "Frigidaire 12,000 BTU 115-Volt window Air Conditioner with Remote, White, FFRE123WAE",
     "brand":"Frigidaire ",
     "image": "/images/cuaso8.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 990,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -498,6 +727,12 @@
     "name": "Winado Ultra Quiet window Air Conditioner 8000 BTU, WiFi Enabled , Easy Installation With Included Kit",
     "brand":"Winado  ",
     "image": "/images/cuaso9.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 783,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -511,6 +746,12 @@
     "name": "GE® 6,000 BTU Electronic window Air Conditioner for Small Rooms up to 250 sq ft., Black",
     "brand":"GE ",
     "image": "/images/cuaso10.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 728,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -524,6 +765,12 @@
     "name": "Hisense 6,000 BTU window Air Conditioner with Remote Control, 250 Sq ft, AHW0621CR1W",
     "brand":"Hisense ",
     "image": "/images/cuaso11.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 432,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -537,6 +784,12 @@
     "name": "mollie 12,000 BTU 115V Smart Air Conditioner window Unit with WIFI-Enabled, Energy Saving Room AC Unit with Remote Control & Timer Function, Cools Up to 450 Sq.Ft., White",
     "brand":"mollie  ",
     "image": "/images/cuaso12.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -550,6 +803,12 @@
     "name": "Comfort-Aire 28000 BTU 700 Sq Ft window Air Conditioner",
     "brand":"Comfort-Aire",
     "image": "/images/cuaso13.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 423,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -563,6 +822,12 @@
     "name": "Amana 5,000 BTU 115V window-Mounted Air Conditioner with Mechanical Controls",
     "brand":"Amana",
     "image": "/images/cuaso14.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 740,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -576,6 +841,12 @@
     "name": "TCL 6,000 BTU window Air Conditioner, 250 sq. ft., LED Display, Included Remote, Black, W6W32-B",
     "brand":"TCL",
     "image": "/images/cuaso14.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1202,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -590,6 +861,12 @@
     "name": "Daikin Inverter 1 HP ATKF25ZVMV",
     "brand": "Daikin",
     "image": "/images/daikin3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 600,
     "description": "Fast cooling, optimal energy saving.",
     "stock": 8,
@@ -603,6 +880,12 @@
     "name": "Amana 5,000 BTU 115V window-Mounted Air Conditioner with Mechanical Controls",
     "brand":"Amana",
     "image": "/images/cuaso14.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 450,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -616,6 +899,12 @@
     "name": "Hisense 6,000 BTU window Air Conditioner with Remote Control, 250 Sq ft, AHW0621CR1W",
     "brand":"Hisense ",
     "image": "/images/cuaso11.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 230,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
@@ -629,6 +918,12 @@
     "name": "Daikin Inverter 1 HP ATKB25YVMV",
     "brand": "Daikin",
     "image": "/images/daikin1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 500,
     "description": "Inverter technology saves energy, fast cooling.",
     "stock": 10,
@@ -642,6 +937,12 @@
     "name": "Mitsubishi Electric 2 HP",
     "brand": "LG",
     "image": "/images/sanphamamtuong3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 460,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -655,6 +956,12 @@
     "name": "Nagakawa Ceiling Cassette Air Conditioner 5 HP NT-C50R1T20",
     "brand": "Nagakawa",
     "image": "/images/amtran9.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1123,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -668,6 +975,12 @@
     "name": "LG 24,500 BTU 1550 Sq ft 230V window Air Conditioner, LW2524RD",
     "brand":"LG",
     "image": "/images/cuaso1.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1254,
     "description": "Auto restart will automatically turn the unit back on when power is restored after an outage",
     "stock":15,
@@ -681,6 +994,12 @@
     "name": "LG Inverter 1 HP V10API1",
     "brand": "LG",
     "image": "/images/lg3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 650,
     "description": "Durable operation, energy saving.",
     "stock": 9,
@@ -694,6 +1013,12 @@
     "name": "Gree Ceiling Cassette Air Conditioner 2.5 HP GU71T/A‐K/GUL71W/A‐K",
     "brand": "Gree",
     "image": "/images/amtran12.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 709,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -707,6 +1032,12 @@
     "name": "Samsung 360° Cassette Air Conditioner 4 HP AC120TN4PKC/EA",
     "brand": "Samsung",
     "image": "/images/amtran8.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 432,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -720,6 +1051,12 @@
     "name": "Gree Ceiling Cassette Air Conditioner 2.5 HP GU71T/A‐K/GUL71W/A‐K",
     "brand": "Gree",
     "image": "/images/amtran12.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 412,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
@@ -733,6 +1070,12 @@
     "name": "Mitsubishi Electric 2 HP",
     "brand": "LG",
     "image": "/images/sanphamamtuong3.jpg",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 1233,
     "description": "Compact design, fast cooling.",
     "stock": 4.5,
@@ -746,6 +1089,12 @@
     "name": "HomePointe 5,000 BTU Mechanical window Air Conditioner w/ Dial Temp Control",
     "brand":"HomePointe ",
     "image": "/images/cuaso5.webp",
+    "extraImages": [
+      "/images/dai1.1.jpg",
+      "/images/dai1.2.jpg",
+      "/images/dai1.3.jpg",
+      "/images/dai1.4.jpg"
+    ],
     "price": 900,
     "description": "window Air Conditioner with HeaterWhite",
     "stock":15,
