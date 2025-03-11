@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Container, Card, Button, Carousel, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponent from "../components/NavbarComponent";
@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
-  const productSliderRef = useRef(null);
 
   return (
     <>
