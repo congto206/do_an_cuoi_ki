@@ -10,7 +10,7 @@
       "/images/dai1.3.jpg",
       "/images/dai1.4.jpg"
     ],
-    "price": 500,
+    "price": 408,
     "description": "Inverter technology saves energy, fast cooling.",
     "stock": 10,
     "category": "split",
@@ -25,12 +25,12 @@
     "brand": "Daikin",
     "image": "/images/daikin2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/dai2.1.jpg",
+      "/images/dai2.2.jpg",
+      "/images/dai2.3.jpg",
+      "/images/dai2.4.jpg"
     ],
-    "price": 343,
+    "price": 537,
     "description": "Antibacterial, deodorizing, smooth operation.",
     "stock": 15,
     "category": "split",
@@ -44,12 +44,12 @@
     "brand": "Daikin",
     "image": "/images/daikin3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/dai3.1.jpg",
+      "/images/dai3.2.jpg",
+      "/images/dai3.3.jpg",
+      "/images/dai3.4.jpg"
     ],
-    "price": 600,
+    "price": 466,
     "description": "Fast cooling, optimal energy saving.",
     "stock": 8,
     "category": "split",
@@ -63,12 +63,12 @@
     "brand": "LG",
     "image": "/images/lg1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/lg1.1.jpg",
+      "/images/lg1.2.jpg",
+      "/images/lg1.3.jpg",
+      "/images/lg1.4.jpg"
     ],
-    "price": 223,
+    "price": 419,
     "description": "WindFree technology prevents direct airflow.",
     "stock": 12,
     "category": "split",
@@ -82,12 +82,12 @@
     "brand": "LG",
     "image": "/images/lg2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/lg2.1.jpg",
+      "/images/lg2.2.jpg",
+      "/images/lg2.3.jpg",
+      "/images/lg2.4.jpg"
     ],
-    "price": 400,
+    "price": 611,
     "description": "Fast cooling, mold-resistant filter.",
     "stock": 20,
     "category": "split",
@@ -101,12 +101,12 @@
     "brand": "LG",
     "image": "/images/lg3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/lg3.1.jpg",
+      "/images/lg3.2.jpg",
+      "/images/lg3.3.jpg",
+      "/images/lg3.4.jpg"
     ],
-    "price": 650,
+    "price": 423,
     "description": "Durable operation, energy saving.",
     "stock": 9,
     "category": "split",
@@ -116,14 +116,14 @@
   },
   {
     "id": 9,
-    "name": "Mitsubishi Electric 2 HP",
+    "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-PU9AKH-8",
     "brand": "Panasonic",
     "image": "/images/panasonic1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/pana1.1.jpg",
+      "/images/pana1.2.jpg",
+      "/images/pana1.3.jpg",
+      "/images/pana1.4.jpg"
     ],
     "price": 1029,
     "description": "Deodorizing, fast cooling, energy saving.",
@@ -135,14 +135,14 @@
   },
   {
     "id": 10,
-    "name": "Toshiba Inverter 1HP",
+    "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-XU9ZKH-8",
     "brand": "Panasonic",
     "image": "/images/panasonic2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/pana2.1.jpg",
+      "/images/pana2.2.jpg",
+      "/images/pana2.3.jpg",
+      "/images/pana2.4.jpg"
     ],
     "price": 500,
     "description": "Modern design, stable performance.",
@@ -154,14 +154,14 @@
   },
   {
     "id": 11,
-    "name": "Daikin Inverter 1.5 HP",
+    "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-XU9BKH-8",
     "brand": "Panasonic",
     "image": "/images/panasonic3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/pana3.1.jpg",
+      "/images/pana3.2.jpg",
+      "/images/pana3.3.jpg",
+      "/images/pana3.4.jpg"
     ],
     "price": 520,
     "description": "Advanced energy-saving technology.",
@@ -287,14 +287,14 @@
   },  
   {
     "id": 20,
-    "name": "Funiki Inverter Air Conditioner 1 HP HIC09TMU.ST3",
+    "name": "Máy lạnh Funiki Inverter 1 HP HIC09TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/fun1.1.jpg",
+      "/images/fun1.2.jpg",
+      "/images/fun1.3.jpg",
+      "/images/fun1.4.jpg"
     ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
@@ -306,14 +306,14 @@
   },
   {
     "id": 21,
-    "name": "Funiki Inverter Air Conditioner 2 HP HIC18TMU.ST3",
+    "name": "Máy lạnh Funiki Inverter 2 HP HIC18TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/fun2.1.jpg",
+      "/images/fun2.2.jpg",
+      "/images/fun2.3.jpg",
+      "/images/fun2.4.jpg"
     ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
@@ -325,14 +325,14 @@
   },
   {
     "id": 22,
-    "name": "Funiki Inverter Air Conditioner 1.5 HP HIC12TMU.ST3",
+    "name": "Máy lạnh Funiki Inverter 1.5 HP HIC12TMU.ST3",
     "brand": "Funiki",
     "image": "/images/funiki-3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/fun3.1.jpg",
+      "/images/fun3.2.jpg",
+      "/images/fun3.3.jpg",
+      "/images/fun3.4.jpg"
     ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
@@ -348,10 +348,10 @@
     "brand": "Funiki",
     "image": "/images/funiki-4.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/fun4.1.jpg",
+      "/images/fun4.2.jpg",
+      "/images/fun4.3.jpg",
+      "/images/fun4.4.jpg"
     ],
     "price": 4,
     "description": "Integrated antibacterial filter.",
@@ -363,14 +363,14 @@
   },
   {
     "id": 24,
-    "name": "Toshiba Inverter Air Conditioner 1.5 HP RAS-H13Z2KCVG-V",
+    "name": "Máy lạnh Toshiba Inverter 1.5 HP RAS-H13Z2KCVG-V",
     "brand": "Toshiba",
     "image": "/images/toshiba1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/to1.1.jpg",
+      "/images/to1.2.jpg",
+      "/images/to1.3.jpg",
+      "/images/to1.4.jpg"
     ],
     "price": 4,
     "description": "Gentle airflow protects skin with HadaCare. Self-cleaning function.",
@@ -382,14 +382,14 @@
   },
   {
     "id": 25,
-    "name": "Casper Inverter Air Conditioner 1 HP GC-09IB36",
+    "name": "Máy lạnh Casper Inverter 1 HP GC-09IB36",
     "brand": "Casper",
     "image": "/images/casper1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cas1.1.jpg",
+      "/images/cas1.2.jpg",
+      "/images/cas1.3.jpg",
+      "/images/cas1.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -401,14 +401,14 @@
   },
   {
     "id": 26,
-    "name": "Casper Inverter Air Conditioner 1.5 HP GC-12IB36",
+    "name": "Máy lạnh Casper Inverter 1.5 HP GC-12IB36",
     "brand": "Casper",
     "image": "/images/casper2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cas2.1.jpg",
+      "/images/cas2.2.jpg",
+      "/images/cas2.3.jpg",
+      "/images/cas2.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
