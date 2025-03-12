@@ -43,7 +43,7 @@ const ProductSection = ({ title, category }) => {
                     🔍 Details
                   </Button>
                   <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
-                    🛒 Buy
+                    🛒 Add To Cart
                   </Button>
                 </div>
               </Card.Body>
