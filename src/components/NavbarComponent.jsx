@@ -82,6 +82,14 @@ const NavbarComponent = () => {
             >
               Contact
             </Nav.Link>
+
+            <Nav.Link
+              as={Link}
+              to="/Checkout"
+              className={location.pathname === "/Checkout" ? "active-link" : ""}
+            >
+              Checkout
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

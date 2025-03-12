@@ -42,9 +42,8 @@ const ProductSection = ({ title, category }) => {
                   <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
                     🔍 Details
                   </Button>
-                  <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
-                    🛒 Add To Cart
-                  </Button>
+                  <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/Checkout?productId=${product.id}`)}> 🛒 Add To Cart</Button>
+
                 </div>
               </Card.Body>
             </Card>
