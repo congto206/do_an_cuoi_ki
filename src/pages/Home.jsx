@@ -76,9 +76,9 @@ const Home = () => {
       </Carousel>
 
       {/* Product Sections */}
-      {renderProductCarousel("\uD83C\uDF1F Sản phẩm nổi bật \uD83C\uDF1F", featuredProducts)}
-      {renderProductCarousel("\uD83D\uDD25 Sản phẩm bán chạy \uD83D\uDD25", bestSellingProducts)}
-      {renderProductCarousel("\uD83D\uDCB0 Sản phẩm giảm giá \uD83D\uDCB0", discountProducts)}
+      {renderProductCarousel("\uD83C\uDF1F Outstanding Product \uD83C\uDF1F", featuredProducts)}
+      {renderProductCarousel("\uD83D\uDD25 Best Selling Product \uD83D\uDD25", bestSellingProducts)}
+      {renderProductCarousel("\uD83D\uDCB0 Discounted Products \uD83D\uDCB0", discountProducts)}
   
 
       <style>
