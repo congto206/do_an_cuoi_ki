@@ -174,14 +174,13 @@
   },
   {
     "id": 12,
-    "name": "Panasonic Inverter 1HP",
+    "name": "LG Inverter 3 HP Ceiling Air Conditioner ZTNQ30GNLE0",
     "brand": "LG",
-    "image": "/images/sanphamamtuong1.jpg",
+    "image": "/images/amtran1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran1.1.jpg",
+      "/images/amtran1.2.jpg",
+      "/images/amtran1.3.jpg"
     ],
     "price": 630,
     "description": "Fast cooling, energy-saving mode.",
@@ -193,14 +192,14 @@
   },
   {
     "id": 13,
-    "name": "LG DualCool 2HP",
+    "name": "1-way ceiling-mounted air conditioner LG Inverter 2.5 HP ZTNQ24GTLA0",
     "brand": "LG",
-    "image": "/images/sanphamamtuong2.jpg",
+    "image": "/images/amtran2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran2.1.jpg",
+      "/images/amtran2.2.jpg",
+      "/images/amtran2.3.jpg",
+      "/images/amtran2.4.jpg"
     ],
     "price": 410,
     "description": "Affordable price, suitable for small rooms.",
@@ -212,14 +211,14 @@
   },
   {
     "id": 15,
-    "name": "Mitsubishi Electric 2 HP",
+    "name": "LG 4 HP ATNQ36GNLE7 Ceiling Air Conditioner (3 Phase)",
     "brand": "LG",
-    "image": "/images/sanphamamtuong3.jpg",
+    "image": "/images/amtran3.png",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran3.1.png",
+      "/images/amtran3.2.png",
+      "/images/amtran3.3.png",
+      "/images/amtran3.4.png"
     ],
     "price": 460,
     "description": "Compact design, fast cooling.",
@@ -231,14 +230,14 @@
   },
   {
     "id": 16,
-    "name": "Samsung Inverter 3.5 HP Ceiling Air Conditioner AC100TN4DKC/EA (3 Phase)",
-    "brand": "LG",
-    "image": "/images/sanphamamtuong4.jpg",
+    "name": "2-Way Ceiling Air Conditioner Gree Inverter 2.0 HP GUD50T/A-S/GUD50W/A-S",
+    "brand": "GreeGree",
+    "image": "/images/amtran4.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran4.1.jpg",
+      "/images/amtran4.2.jpg",
+      "/images/amtran4.3.jpg",
+      "/images/amtran4.44.jpg"
     ],
     "price": 460,
     "description": "Compact design, fast cooling.",
@@ -250,14 +249,12 @@
   },
   {
     "id": 17,
-    "name": "LG Inverter 2 HP One-Way Ceiling Air Conditioner ZTNQ18GTLA0",
-    "brand": "LG",
-    "image": "/images/sanphamamtuong5.jpg",
+    "name": "Panasonic Inverter Ceiling Air Conditioner 3 HP S-2430PU3H / U-30PR1H5",
+    "brand": "Panasonic",
+    "image": "/images/amtran5.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran5.1.jpg",
+      "/images/amtran5.2.jpg"
     ],
     "price": 460,
     "description": "Compact design, fast cooling.",
@@ -269,14 +266,14 @@
   },
   {
     "id": 18,
-    "name": "Samsung Inverter 3.5 HP Ceiling Air Conditioner AC100TN4DKC/EA",
+    "name": "LG Inverter 2.0 HP ATNQ18GPLE7 Ceiling Air Conditioner",
     "brand": "LG",
-    "image": "/images/sanphamamtuong6.jpg",
+    "image": "/images/amtran6.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran6.1.jpg",
+      "/images/amtran6.2.jpg",
+      "/images/amtran6.3.jpg",
+      "/images/amtran6.4.jpg"
     ],
     "price": 460,
     "description": "Compact design, fast cooling.",
@@ -425,10 +422,10 @@
     "brand": "LG",
     "image": "/images/amtran7.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran7.1.jpg",
+      "/images/amtran7.2.jpg",
+      "/images/amtran7.3.jpg",
+      "/images/amtran7.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -444,10 +441,10 @@
     "brand": "Samsung",
     "image": "/images/amtran8.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran8.1.jpg",
+      "/images/amtran8.2.jpg",
+      "/images/amtran8.3.jpg",
+      "/images/amtran8.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -463,10 +460,9 @@
     "brand": "Nagakawa",
     "image": "/images/amtran9.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran9.1.jpg",
+      "/images/amtran9.2.jpg",
+      "/images/amtran9.3.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -482,10 +478,10 @@
     "brand": "Nagakawa",
     "image": "/images/amtran10.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran10.1.jpg",
+     "/images/amtran10.2.jpg",
+      "/images/amtran10.3.jpg",
+      "/images/amtran10.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -501,10 +497,9 @@
     "brand": "Midea",
     "image": "/images/amtran11.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran11.1.jpg",
+      "/images/amtran11.2.jpg",
+      "/images/amtran11.3.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -520,10 +515,10 @@
     "brand": "Gree",
     "image": "/images/amtran12.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran12.1.jpg",
+      "/images/amtran12.2.jpg",
+      "/images/amtran12.3.jpg",
+      "/images/amtran12.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection with smart leakage detection.",
@@ -539,10 +534,10 @@
     "brand": "LG",
     "image": "/images/amtran13.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran13.1.jpg",
+     "/images/amtran13.2.jpg",
+      "/images/amtran13.3.jpg",
+      "/images/amtran13.4.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection mechanism with intelligent leak detection",
@@ -558,10 +553,8 @@
     "brand": "LG",
     "image": "/images/amtran15.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran15.1.jpg",
+      "/images/amtran15.2.jpg"
     ],
     "price": 4,
     "description": "Dual safety protection mechanism with intelligent leak detection",
@@ -577,10 +570,10 @@
     "brand":"LG",
     "image": "/images/cuaso1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso1.1.webp",
+      "/images/cuaso1.2.jpeg",
+      "/images/cuaso1.3.webp",
+      "/images/cuaso1.4.webp"
     ],
     "price": 1200,
     "description": "Auto restart will automatically turn the unit back on when power is restored after an outage",
@@ -596,10 +589,10 @@
     "brand":"Durastar",
     "image": "/images/cuaso2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso2.1.webp",
+      "/images/cuaso2.2.webp",
+      "/images/cuaso2.3.jpeg",
+      "/images/cuaso2.4.webp"
     ],
     "price": 466,
     "description": "window Air Conditioner with HeaterWhite",
@@ -615,10 +608,9 @@
     "brand":"Senville",
     "image": "/images/cuaso3.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso3.1.webp",
+      "/images/cuaso3.2.webp",
+      "/images/cuaso3.3.webp"
     ],
     "price": 479,
     "description": "window Air Conditioner with HeaterWhite",
@@ -634,10 +626,10 @@
     "brand":"Whirlpool",
     "image": "/images/cuaso4.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso4.1.webp",
+      "/images/cuaso4.2.webp",
+      "/images/cuaso4.3.webp",
+      "/images/cuaso4.4.webp"
     ],
     "price": 124,
     "description": "window Air Conditioner with HeaterWhite",
@@ -653,10 +645,10 @@
     "brand":"HomePointe ",
     "image": "/images/cuaso5.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso5.1.webp",
+      "/images/cuaso5.2.webp",
+      "/images/cuaso5.3.webp",
+      "/images/cuaso5.4.webp"
     ],
     "price": 672,
     "description": "window Air Conditioner with HeaterWhite",
@@ -672,10 +664,10 @@
     "brand":"Midea ",
     "image": "/images/cuaso6.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso6.1.webp",
+      "/images/cuaso6.2.webp",
+      "/images/cuaso6.3.webp",
+      "/images/cuaso6.4.webp"
     ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
@@ -691,10 +683,10 @@
     "brand":"Midea ",
     "image": "/images/cuaso7.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso7.1.webp",
+      "/images/cuaso7.2.webp",
+      "/images/cuaso7.3.webp",
+      "/images/cuaso7.4.webp"
     ],
     "price": 750,
     "description": "window Air Conditioner with HeaterWhite",
@@ -710,10 +702,10 @@
     "brand":"Frigidaire ",
     "image": "/images/cuaso8.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso8.1.webp",
+      "/images/cuaso8.2.webp",
+      "/images/cuaso8.3.webp",
+      "/images/cuaso8.4.webp"
     ],
     "price": 990,
     "description": "window Air Conditioner with HeaterWhite",
@@ -729,10 +721,10 @@
     "brand":"Winado  ",
     "image": "/images/cuaso9.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso9.1.webp",
+      "/images/cuaso9.2.webp",
+      "/images/cuaso9.3.webp",
+      "/images/cuaso9.4.webp"
     ],
     "price": 783,
     "description": "window Air Conditioner with HeaterWhite",
@@ -748,10 +740,9 @@
     "brand":"GE ",
     "image": "/images/cuaso10.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso10.1.webp",
+      "/images/cuaso10.2.webp",
+      "/images/cuaso10.3.webp"
     ],
     "price": 728,
     "description": "window Air Conditioner with HeaterWhite",
@@ -767,10 +758,10 @@
     "brand":"Hisense ",
     "image": "/images/cuaso11.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso11.1.webp",
+      "/images/cuaso11.2.webp",
+      "/images/cuaso11.3.webp",
+      "/images/cuaso11.4.webp"
     ],
     "price": 432,
     "description": "window Air Conditioner with HeaterWhite",
@@ -786,10 +777,10 @@
     "brand":"mollie  ",
     "image": "/images/cuaso12.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso12.1.webp",
+      "/images/cuaso12.2.webp",
+      "/images/cuaso12.3.webp",
+      "/images/cuaso12.4.webp"
     ],
     "price": 400,
     "description": "window Air Conditioner with HeaterWhite",
@@ -805,10 +796,10 @@
     "brand":"Comfort-Aire",
     "image": "/images/cuaso13.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso13.1.webp",
+      "/images/cuaso13.2.webp",
+      "/images/cuaso13.3.webp",
+      "/images/cuaso13.4.webp"
     ],
     "price": 423,
     "description": "window Air Conditioner with HeaterWhite",
@@ -824,10 +815,10 @@
     "brand":"Amana",
     "image": "/images/cuaso14.webp",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cuaso15.1.webp",
+      "/images/cuaso15.2.jpeg",
+      "/images/cuaso15.3.webp",
+      "/images/cuaso15.4.webp"
     ],
     "price": 740,
     "description": "window Air Conditioner with HeaterWhite",
@@ -878,41 +869,41 @@
   },
   {
     "id": 51,
-    "name": "Amana 5,000 BTU 115V window-Mounted Air Conditioner with Mechanical Controls",
-    "brand":"Amana",
-    "image": "/images/cuaso14.webp",
+    "name": "Daikin Inverter 1 HP ATKB25YVMV",
+    "brand": "Daikin",
+    "image": "/images/daikin1.jpg",
     "extraImages": [
       "/images/daikin1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
+      "/images/daikin1.2.jpg",
+      "/images/daikin1.3.jpg",
       "/images/dai1.4.jpg"
     ],
-    "price": 450,
-    "description": "window Air Conditioner with HeaterWhite",
-    "stock":15,
-    "category":"best",
-    "rating":4.8,
-    "warranty":"2 năm",
-    "power_consumption":"230V "   
+    "price": 408,
+    "description": "Inverter technology saves energy, fast cooling.",
+    "stock": 10,
+    "category": "best",
+    "rating": 4.8,
+    "warranty": "2 years",
+    "power_consumption": "1200W"
   },
   {
     "id": 52,
-    "name": "Hisense 6,000 BTU window Air Conditioner with Remote Control, 250 Sq ft, AHW0621CR1W",
-    "brand":"Hisense ",
-    "image": "/images/cuaso11.webp",
+    "name": "Daikin Inverter 1 HP ATKF25ZVMV",
+    "brand": "Daikin",
+    "image": "/images/daikin3.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/dai3.1.jpg",
+      "/images/dai3.2.jpg",
+      "/images/dai3.3.jpg",
+      "/images/dai3.4.jpg"
     ],
-    "price": 230,
-    "description": "window Air Conditioner with HeaterWhite",
-    "stock":15,
-    "category":"best",
-    "rating":4.8,
-    "warranty":"2 năm",
-    "power_consumption":"230V "   
+    "price": 466,
+    "description": "Fast cooling, optimal energy saving.",
+    "stock": 8,
+    "category": "best",
+    "rating": 4.5,
+    "warranty": "2 years",
+    "power_consumption": "1600W"
   },
   {
     "id": 53,
@@ -958,10 +949,9 @@
     "brand": "Nagakawa",
     "image": "/images/amtran9.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran9.1.jpg",
+      "/images/amtran9.2.jpg",
+      "/images/amtran9.3.jpg"
     ],
     "price": 1123,
     "description": "Dual safety protection with smart leakage detection.",
@@ -973,22 +963,21 @@
   },
   {
     "id": 56,
-    "name": "LG 24,500 BTU 1550 Sq ft 230V window Air Conditioner, LW2524RD",
-    "brand":"LG",
-    "image": "/images/cuaso1.jpg",
+    "name": "LG Inverter 3 HP Ceiling Air Conditioner ZTNQ30GNLE0",
+    "brand": "LG",
+    "image": "/images/amtran1.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran1.1.jpg",
+      "/images/amtran1.2.jpg",
+      "/images/amtran1.3.jpg"
     ],
-    "price": 1254,
-    "description": "Auto restart will automatically turn the unit back on when power is restored after an outage",
-    "stock":15,
-    "category":"best",
-    "rating":4.8,
-    "warranty":"2 năm",
-    "power_consumption":"230V "
+    "price": 630,
+    "description": "Fast cooling, energy-saving mode.",
+    "stock": 6,
+    "category": "best",
+    "rating": 4.7,
+    "warranty": "3 years",
+    "power_consumption": "1600W"
   },
   {
     "id": 57,
@@ -1034,10 +1023,10 @@
     "brand": "Samsung",
     "image": "/images/amtran8.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran8.1.jpg",
+      "/images/amtran8.2.jpg",
+      "/images/amtran8.3.jpg",
+      "/images/amtran8.4.jpg"
     ],
     "price": 432,
     "description": "Dual safety protection with smart leakage detection.",
@@ -1053,10 +1042,10 @@
     "brand": "Gree",
     "image": "/images/amtran12.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran12.1.jpg",
+      "/images/amtran12.2.jpg",
+      "/images/amtran12.3.jpg",
+      "/images/amtran12.4.jpg"
     ],
     "price": 412,
     "description": "Dual safety protection with smart leakage detection.",
@@ -1087,21 +1076,76 @@
   },
   {
     "id": 62,
-    "name": "HomePointe 5,000 BTU Mechanical window Air Conditioner w/ Dial Temp Control",
-    "brand":"HomePointe ",
-    "image": "/images/cuaso5.webp",
+    "name": "LG 4 HP ATNQ36GNLE7 Ceiling Air Conditioner (3 Phase)",
+    "brand": "LG",
+    "image": "/images/amtran3.png",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran3.1.png",
+      "/images/amtran3.2.png",
+      "/images/amtran3.3.png",
+      "/images/amtran3.4.png"
     ],
-    "price": 900,
-    "description": "window Air Conditioner with HeaterWhite",
-    "stock":15,
-    "category":"best",
-    "rating":4.8,
-    "warranty":"2 năm",
-    "power_consumption":"230V "   
+    "price": 460,
+    "description": "Compact design, fast cooling.",
+    "stock": 4.5,
+    "category": "best",
+    "rating": 5,
+    "warranty": "2 years",
+    "power_consumption": "1600W"
+  },
+  {
+    "id": 63,
+    "name": "Samsung 360° Cassette Air Conditioner 4 HP AC120TN4PKC/EA",
+    "brand": "Samsung",
+    "image": "/images/amtran8.jpg",
+    "extraImages": [
+      "/images/amtran8.1.jpg",
+      "/images/amtran8.2.jpg",
+      "/images/amtran8.3.jpg",
+      "/images/amtran8.4.jpg"
+    ],
+    "price": 432,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
+    "category": "best",
+    "rating": 4.8,
+    "warranty": "2 years",
+    "power_consumption": "4 HP - 48,000 BTU"
+  },
+  {
+    "id": 64,
+    "name": "Nagakawa Ceiling Cassette Air Conditioner 4 HP NT-C36R1T20",
+    "brand": "Nagakawa",
+    "image": "/images/amtran10.jpg",
+    "extraImages": [
+      "/images/amtran10.1.jpg",
+     "/images/amtran10.2.jpg",
+      "/images/amtran10.3.jpg",
+      "/images/amtran10.4.jpg"
+    ],
+    "price": 4,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
+    "category": "best",
+    "rating": 4.8,
+    "warranty": "2 years",
+    "power_consumption": "4 HP - 36,000 BTU"
+  },
+  {
+    "id": 65,
+    "name": "Panasonic Inverter 3 HP Ceiling Air Conditioner S-2430PU3H / U-30PR1H5",
+    "brand": "LG",
+    "image": "/images/amtran15.jpg",
+    "extraImages": [
+      "/images/amtran15.1.jpg",
+      "/images/amtran15.2.jpg"
+    ],
+    "price": 4,
+    "description": "Dual safety protection mechanism with intelligent leak detection",
+    "stock": 15,
+    "category": "best",
+    "rating": 4.8,
+    "warranty": "2 years",
+    "power_consumption": "1.5 HP - 12,000 BTU"
   }
 ]
