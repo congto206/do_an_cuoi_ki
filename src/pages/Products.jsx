@@ -42,9 +42,8 @@ const ProductSection = ({ title, category }) => {
                   <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
                     🔍 Details
                   </Button>
-                  <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
-                    🛒 Add To Cart
-                  </Button>
+                  <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/Checkout?productId=${product.id}`)}> 🛒 Add To Cart</Button>
+
                 </div>
               </Card.Body>
             </Card>
@@ -77,7 +76,7 @@ const Products = () => {
         </div>
 
         <Container className="mt-4 product-content">
-          <h2 className="text-center text-black fw-bold"> Air conditioner list </h2>
+          <h2 className="text-center text-black fw-bold"> Air Conditioner List </h2>
           {categories.map(({ key, title }) => (
             <ProductSection key={key} title={title} category={key} />
           ))}

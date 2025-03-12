@@ -10,24 +10,18 @@ const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { addToCart } = useCart();
-  const [product, setProduct] = useState(null);
-  const [selectedImage, setSelectedImage] = useState("");
-  const [extraImages, setExtraImages] = useState([]);
+  const product = products.find((p) => p.id === parseInt(id));
+  const [selectedImage, setSelectedImage] = useState(product?.image);
   const [suggestedProducts, setSuggestedProducts] = useState([]);
 
   useEffect(() => {
-    const foundProduct = products.find((p) => p.id === parseInt(id));
-    if (foundProduct) {
-      setProduct(foundProduct);
-      setSelectedImage(foundProduct.image);
-      setExtraImages(foundProduct.extraImages ? [...foundProduct.extraImages] : []);
-      
+    if (product) {
       const related = products
-        .filter((p) => p.category === foundProduct.category && p.id !== foundProduct.id)
-        .slice(0, 4);
+        .filter((p) => p.category === product.category && p.id !== product.id)
+        .slice(0, 4); // Lấy 4 sản phẩm liên quan
       setSuggestedProducts(related);
     }
-  }, [id]);
+  }, [product]);
 
   if (!product)
     return (
@@ -42,12 +36,20 @@ const ProductDetail = () => {
     navigate("/cart");
   };
 
-  const handleImageClick = (newImage) => {
-    setExtraImages((prev) => {
-      const updatedImages = prev.filter((img) => img !== newImage);
-      return [selectedImage, ...updatedImages];
-    });
-    setSelectedImage(newImage);
+  const handleReplaceSuggestedProduct = (index) => {
+    const remainingProducts = products.filter(
+      (p) => p.category === product.category &&
+             p.id !== product.id &&
+             !suggestedProducts.some(sp => sp.id === p.id)
+    );
+    if (remainingProducts.length > 0) {
+      const newProduct = remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
+      setSuggestedProducts((prev) => {
+        const updated = [...prev];
+        updated[index] = newProduct;
+        return updated;
+      });
+    }
   };
 
   return (
@@ -64,15 +66,15 @@ const ProductDetail = () => {
               style={{ maxHeight: "400px" }}
             />
             <Row className="mt-3">
-              {extraImages.length > 0 ? (
-                extraImages.map((img, index) => (
+              {product.extraImages && product.extraImages.length > 0 ? (
+                product.extraImages.map((img, index) => (
                   <Col key={index} xs={3} className="text-center">
                     <Image
                       src={img}
                       className="border rounded"
                       fluid
                       style={{ maxHeight: "80px", cursor: "pointer" }}
-                      onClick={() => handleImageClick(img)}
+                      onClick={() => setSelectedImage(img)}
                     />
                   </Col>
                 ))
@@ -97,8 +99,8 @@ const ProductDetail = () => {
               <ListGroup.Item><strong>Rating:</strong> ⭐ {product.rating}/5</ListGroup.Item>
             </ListGroup>
             <div className="d-flex gap-3">
-            <Button variant="outline-dark" onClick={() => navigate("/products")}>⬅️ Back</Button>
-            <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
+              <Button variant="outline-dark" onClick={() => navigate(-1)}>⬅️ Back</Button>
+              <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
             </div>
           </Col>
         </Row>
@@ -106,15 +108,11 @@ const ProductDetail = () => {
         {/* Danh sách sản phẩm đề xuất */}
         <h4 className="mt-5">Related Products</h4>
         <Row>
-          {suggestedProducts.map((related) => (
+          {suggestedProducts.map((related, index) => (
             <Col key={related.id} xs={6} md={3} className="text-center">
               <Card className="shadow-sm border-0">
-                <Card.Img
-                  variant="top"
-                  src={related.image}
-                  style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }}
-                  onClick={() => navigate(`/product/${related.id}`)}
-                />
+                <Card.Img variant="top" src={related.image} style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }} 
+                  onClick={() => handleReplaceSuggestedProduct(index)} />
                 <Card.Body>
                   <Card.Title className="fs-6">{related.name}</Card.Title>
                   <Button variant="outline-primary" size="sm" onClick={() => navigate(`/product/${related.id}`)}>View</Button>

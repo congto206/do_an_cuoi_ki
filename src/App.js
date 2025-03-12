@@ -9,6 +9,9 @@ import SplitAC from "./pages/SplitAC";      // Điều hòa treo tường
 import WindowAC from "./pages/WindowAC";    // Điều hòa cửa sổ
 import ContactPage from "./pages/ContactPage"; // Trang liên hệ
 import About from "./pages/about"; // Trang liên hệ
+import Checkout from "./pages/Checkout"; // Trang thanh toán
+
+
 
 
 const App = () => {
@@ -27,6 +30,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           {/* Trang Gioi thieu */}
           <Route path="/about" element={<About />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </Router>
     </CartProvider>
