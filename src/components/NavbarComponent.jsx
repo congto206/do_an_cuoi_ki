@@ -26,13 +26,14 @@ const NavbarComponent = () => {
         {/* Menu */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
+          <Nav.Link
               as={Link}
-              to="/Products"
-              className={location.pathname === "/" ? "active-link" : ""}
+              to="/products"
+              className={location.pathname === "/products" ? "active-link home-active" : ""}
             >
               Home
             </Nav.Link>
+
 
             <NavDropdown title="Products" id="basic-nav-dropdown">
               <NavDropdown.Item
@@ -88,6 +89,11 @@ const NavbarComponent = () => {
       {/* Custom CSS */}
       <style>
         {`
+        .custom-navbar .home-active {
+          border-bottom: 2px solid rgb(239, 243, 245);
+          padding-bottom: 4px;
+        }
+
           .custom-navbar {
             background: #343a40;
             padding: 12px 0;
