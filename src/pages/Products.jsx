@@ -77,7 +77,7 @@ const Products = () => {
         </div>
 
         <Container className="mt-4 product-content">
-          <h2 className="text-center text-black fw-bold"> Air conditioner list </h2>
+          <h2 className="text-center text-black fw-bold"> Air Conditioner List </h2>
           {categories.map(({ key, title }) => (
             <ProductSection key={key} title={title} category={key} />
           ))}

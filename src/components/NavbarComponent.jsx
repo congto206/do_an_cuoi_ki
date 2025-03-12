@@ -41,7 +41,7 @@ const NavbarComponent = () => {
                 to="/products"
                 className={location.pathname === "/products" ? "active-dropdown" : ""}
               >
-                All Air-conditioned
+                All Air-Conditioned
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
