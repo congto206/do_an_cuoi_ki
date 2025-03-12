@@ -78,7 +78,7 @@ const WindowAC = () => {
                                             🔍 Details
                                         </Button>
                                         <Button variant="success" className="btn-animate" onClick={() => navigate(`/product/${product.id}`)}>
-                                            🛒 Buy
+                                            🛒 Add To Cart
                                         </Button>
                                     </div>
                                 </Card.Body>
