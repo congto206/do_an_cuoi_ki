@@ -850,98 +850,98 @@
 
   {
     "id": 50,
-    "name": "Daikin Inverter 1 HP ATKF25ZVMV",
-    "brand": "Daikin",
-    "image": "/images/daikin3.jpg",
+    "name": "Máy lạnh Casper Inverter 1.5 HP GC-12IB36",
+    "brand": "Casper",
+    "image": "/images/casper2.jpg",
     "extraImages": [
-      "/images/daikin1.1.jpg",
-      "/images/daikin1.2.jpg",
-      "/images/daikin1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cas2.1.jpg",
+      "/images/cas2.2.jpg",
+      "/images/cas2.3.jpg",
+      "/images/cas2.4.jpg"
     ],
-    "price": 600,
-    "description": "Fast cooling, optimal energy saving.",
-    "stock": 8,
+    "price": 4,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
     "category": "best",
-    "rating": 4.5,
+    "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1600W"
+    "power_consumption": "1.5 HP - 12,000 BTU"
   },
   {
     "id": 51,
-    "name": "Daikin Inverter 1 HP ATKB25YVMV",
-    "brand": "Daikin",
-    "image": "/images/daikin1.jpg",
+    "name": "Samsung 360° Cassette Air Conditioner 4 HP AC120TN4PKC/EA",
+    "brand": "Samsung",
+    "image": "/images/amtran8.jpg",
     "extraImages": [
-      "/images/daikin1.1.jpg",
-      "/images/daikin1.2.jpg",
-      "/images/daikin1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/amtran8.1.jpg",
+      "/images/amtran8.2.jpg",
+      "/images/amtran8.3.jpg",
+      "/images/amtran8.4.jpg"
     ],
-    "price": 408,
-    "description": "Inverter technology saves energy, fast cooling.",
-    "stock": 10,
+    "price": 4,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
     "category": "best",
     "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1200W"
+    "power_consumption": "4 HP - 48,000 BTU"
   },
   {
     "id": 52,
-    "name": "Daikin Inverter 1 HP ATKF25ZVMV",
-    "brand": "Daikin",
-    "image": "/images/daikin3.jpg",
+    "name": "Máy lạnh Casper Inverter 1 HP GC-09IB36",
+    "brand": "Casper",
+    "image": "/images/casper1.jpg",
     "extraImages": [
-      "/images/dai3.1.jpg",
-      "/images/dai3.2.jpg",
-      "/images/dai3.3.jpg",
-      "/images/dai3.4.jpg"
+      "/images/cas1.1.jpg",
+      "/images/cas1.2.jpg",
+      "/images/cas1.3.jpg",
+      "/images/cas1.4.jpg"
     ],
-    "price": 466,
-    "description": "Fast cooling, optimal energy saving.",
-    "stock": 8,
-    "category": "best",
-    "rating": 4.5,
-    "warranty": "2 years",
-    "power_consumption": "1600W"
-  },
-  {
-    "id": 53,
-    "name": "Daikin Inverter 1 HP ATKB25YVMV",
-    "brand": "Daikin",
-    "image": "/images/daikin1.jpg",
-    "extraImages": [
-      "/images/daikin1.1.jpg",
-      "/images/daikin1.2.jpg",
-      "/images/daikin1.3.jpg",
-      "/images/dai1.4.jpg"
-    ],
-    "price": 500,
-    "description": "Inverter technology saves energy, fast cooling.",
-    "stock": 10,
+    "price": 4,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
     "category": "best",
     "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1200W"
+    "power_consumption": "1 HP - 9,000 BTU"
+  },
+  {
+    "id": 53,
+    "name": "Gree Ceiling Cassette Air Conditioner 2.5 HP GU71T/A‐K/GUL71W/A‐K",
+    "brand": "Gree",
+    "image": "/images/amtran12.jpg",
+    "extraImages": [
+      "/images/amtran12.1.jpg",
+      "/images/amtran12.2.jpg",
+      "/images/amtran12.3.jpg",
+      "/images/amtran12.4.jpg"
+    ],
+    "price": 4,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
+    "category": "best",
+    "rating": 4.8,
+    "warranty": "2 years",
+    "power_consumption": "2.5 HP - 25,000 BTU"
   },
   {
     "id": 54,
-    "name": "Mitsubishi Electric 2 HP",
-    "brand": "LG",
-    "image": "/images/sanphamamtuong3.jpg",
+    "name": "Daikin Inverter 1.5 HP ATKF35XVMV",
+    "brand": "Daikin",
+    "image": "/images/daikin2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/dai2.1.jpg",
+      "/images/dai2.2.jpg",
+      "/images/dai2.3.jpg",
+      "/images/dai2.4.jpg"
     ],
-    "price": 460,
-    "description": "Compact design, fast cooling.",
-    "stock": 4.5,
+    "price": 537,
+    "description": "Antibacterial, deodorizing, smooth operation.",
+    "stock": 15,
     "category": "best",
-    "rating": 5,
-    "warranty": "2 years",
-    "power_consumption": "1600W"
+    "rating": 4.7,
+    "warranty": "3 years",
+    "power_consumption": "900W"
   },
   {
     "id": 55,
