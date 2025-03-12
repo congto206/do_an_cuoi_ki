@@ -27,7 +27,7 @@ const ProductSection = ({ title, category }) => {
 
   return (
     <div className="mt-5" id={category}>
-      <h3 className="text-center text-success fw-bold category-title">
+     <h3 className="text-center fw-bold category-title" style={{ color: "#555555" }}>
         {categoryIcons[category]} {title}
       </h3>
       <Row className="justify-content-center">
@@ -53,7 +53,7 @@ const ProductSection = ({ title, category }) => {
       </Row>
       <div className="text-center mt-3">
         <Button variant="success" className="btn-view-all" onClick={() => navigate(`/products/${category}`)}>
-           Xem tất cả
+           View All
         </Button>
       </div>
     </div>
@@ -77,7 +77,7 @@ const Products = () => {
         </div>
 
         <Container className="mt-4 product-content">
-          <h2 className="text-center text-primary fw-bold"> Air conditioner list </h2>
+          <h2 className="text-center text-black fw-bold"> Air conditioner list </h2>
           {categories.map(({ key, title }) => (
             <ProductSection key={key} title={title} category={key} />
           ))}
