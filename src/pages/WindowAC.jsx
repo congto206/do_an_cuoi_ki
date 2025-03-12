@@ -177,7 +177,7 @@ const WindowAC = () => {
                     position: fixed;
                     bottom: 20px;
                     right: 20px;
-                    background: linear-gradient(135deg, #007bff, #0056b3);
+                    background: linear-gradient(135deg,rgb(255, 255, 255),rgb(255, 255, 255));
                     color: white;
                     border: none;
                     padding: 12px 16px;

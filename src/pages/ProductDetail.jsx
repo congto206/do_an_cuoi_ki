@@ -97,8 +97,8 @@ const ProductDetail = () => {
               <ListGroup.Item><strong>Rating:</strong> ⭐ {product.rating}/5</ListGroup.Item>
             </ListGroup>
             <div className="d-flex gap-3">
-            <Button variant="outline-dark" onClick={() => navigate("/products")}>⬅️ Back</Button>
-            <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
+              <Button variant="outline-dark" onClick={() => navigate(-1)}>⬅️ Back</Button>
+              <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
             </div>
           </Col>
         </Row>
