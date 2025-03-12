@@ -100,7 +100,7 @@ const ProductDetail = () => {
             </ListGroup>
             <div className="d-flex gap-3">
               <Button variant="outline-dark" onClick={() => navigate(-1)}>⬅️ Back</Button>
-              <Button variant="success" onClick={handleBuyNow}>🛒 Buy Now</Button>
+              <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
             </div>
           </Col>
         </Row>
