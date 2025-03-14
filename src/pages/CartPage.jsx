@@ -2,6 +2,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 import { Container, Table, Button, Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const CartPage = () => {
   const { cart, updateQuantity, removeFromCart } = useCart();
@@ -85,6 +86,7 @@ const CartPage = () => {
               🛍️ Proceed to Checkout
             </Button>
           </div>
+          <Footer />
         </>
       )}
 
