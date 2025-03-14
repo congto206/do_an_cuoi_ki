@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button, ListGroup } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FaFire, FaHome, FaSnowflake, FaBuilding } from "react-icons/fa";
@@ -42,8 +42,6 @@ const ProductSection = ({ title, category }) => {
                   <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
                     🔍 Details
                   </Button>
-                  <Button variant="success" className="m-2 btn-custom" onClick={() => navigate(`/Checkout?productId=${product.id}`)}> 🛒 Add To Cart</Button>
-
                 </div>
               </Card.Body>
             </Card>

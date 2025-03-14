@@ -1,9 +1,11 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Badge } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 const NavbarComponent = () => {
   const location = useLocation();
+  const { cartCount } = useCart();
 
   return (
     <Navbar expand="lg" className="custom-navbar">
@@ -26,14 +28,13 @@ const NavbarComponent = () => {
         {/* Menu */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link
+            <Nav.Link
               as={Link}
               to="/products"
               className={location.pathname === "/products" ? "active-link home-active" : ""}
             >
               Home
             </Nav.Link>
-
 
             <NavDropdown title="Products" id="basic-nav-dropdown">
               <NavDropdown.Item
@@ -82,13 +83,10 @@ const NavbarComponent = () => {
             >
               Contact
             </Nav.Link>
-
-            <Nav.Link
-              as={Link}
-              to="/Checkout"
-              className={location.pathname === "/Checkout" ? "active-link" : ""}
-            >
-              Checkout
+            
+            {/* Cart Icon with Badge */}
+            <Nav.Link as={Link} to="/cart" className="cart-link">
+              🛒 Cart {cartCount > 0 && <Badge bg="danger">{cartCount}</Badge>}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -102,52 +100,58 @@ const NavbarComponent = () => {
           padding-bottom: 4px;
         }
 
-          .custom-navbar {
-            background: #343a40;
-            padding: 12px 0;
-            box-shadow: 0px 4px 6px rgb(239, 243, 245);
-          }
+        .custom-navbar {
+          background: #343a40;
+          padding: 12px 0;
+          box-shadow: 0px 4px 6px rgb(239, 243, 245);
+        }
 
-          .custom-navbar .nav-link {
-            color:rgb(239, 243, 245);
-            font-size: 16px;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-          }
+        .custom-navbar .nav-link {
+          color: rgb(239, 243, 245);
+          font-size: 16px;
+          font-weight: 500;
+          transition: color 0.3s ease-in-out;
+        }
 
-          .custom-navbar .nav-link:hover {
-            color:rgb(239, 243, 245);
-          }
+        .custom-navbar .nav-link:hover {
+          color: rgb(239, 243, 245);
+        }
 
-          .custom-navbar .active-link {
-            color: rgb(239, 243, 245) !important;
-            font-weight: bold;
-            border-bottom: 2px solid rgb(239, 243, 245);
-          }
+        .custom-navbar .active-link {
+          color: rgb(239, 243, 245) !important;
+          font-weight: bold;
+          border-bottom: 2px solid rgb(239, 243, 245);
+        }
 
-          .custom-navbar .dropdown-menu {
-            background: #222;
-          }
+        .custom-navbar .dropdown-menu {
+          background: #222;
+        }
 
-          .custom-navbar .dropdown-item {
-            color: white;
-            transition: background 0.3s ease-in-out;
-          }
+        .custom-navbar .dropdown-item {
+          color: white;
+          transition: background 0.3s ease-in-out;
+        }
 
-          .custom-navbar .dropdown-item:hover {
-            background:rgb(157, 183, 200);
-          }
+        .custom-navbar .dropdown-item:hover {
+          background: rgb(157, 183, 200);
+        }
 
-          .custom-navbar .active-dropdown {
-            background:rgb(157, 183, 200) !important;
-            color: white !important;
-          }
+        .custom-navbar .active-dropdown {
+          background: rgb(157, 183, 200) !important;
+          color: white !important;
+        }
 
-          .brand-name {
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-          }
+        .brand-name {
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .cart-link {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
         `}
       </style>
     </Navbar>

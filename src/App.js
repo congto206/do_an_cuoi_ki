@@ -10,7 +10,7 @@ import WindowAC from "./pages/WindowAC";    // Điều hòa cửa sổ
 import ContactPage from "./pages/ContactPage"; // Trang liên hệ
 import About from "./pages/about"; // Trang liên hệ
 import Checkout from "./pages/Checkout"; // Trang thanh toán
-
+import CartPage from "./pages/CartPage";
 
 
 
@@ -31,6 +31,7 @@ const App = () => {
           {/* Trang Gioi thieu */}
           <Route path="/about" element={<About />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </Router>
     </CartProvider>
