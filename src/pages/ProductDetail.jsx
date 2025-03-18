@@ -38,19 +38,23 @@ const ProductDetail = () => {
 
   const handleReplaceSuggestedProduct = (index) => {
     const remainingProducts = products.filter(
-      (p) => p.category === product.category &&
-             p.id !== product.id &&
-             !suggestedProducts.some(sp => sp.id === p.id)
+      (p) => 
+        p.category === product.category &&
+        p.id !== product.id &&
+        !suggestedProducts.some(sp => sp.id === p.id) // Tránh lặp lại
     );
+  
     if (remainingProducts.length > 0) {
       const newProduct = remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
-      setSuggestedProducts((prev) => {
-        const updated = [...prev];
-        updated[index] = newProduct;
+  
+      setSuggestedProducts(prev => {
+        const updated = [...prev]; // Tạo bản sao mới của mảng
+        updated[index] = newProduct; // Cập nhật phần tử cụ thể
         return updated;
       });
     }
   };
+  
 
   return (
     <>
@@ -99,7 +103,7 @@ const ProductDetail = () => {
               <ListGroup.Item><strong>Rating:</strong> ⭐ {product.rating}/5</ListGroup.Item>
             </ListGroup>
             <div className="d-flex gap-3">
-              <Button variant="outline-dark" onClick={() => navigate(-1)}>⬅️ Back</Button>
+              <Button variant="outline-dark" onClick={() => navigate("/products")}>⬅️ Back</Button>
               <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
             </div>
           </Col>
@@ -110,12 +114,22 @@ const ProductDetail = () => {
         <Row>
           {suggestedProducts.map((related, index) => (
             <Col key={related.id} xs={6} md={3} className="text-center">
-              <Card className="shadow-sm border-0">
-                <Card.Img variant="top" src={related.image} style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }} 
-                  onClick={() => handleReplaceSuggestedProduct(index)} />
-                <Card.Body>
+              <Card className="shadow-sm border-0 d-flex flex-column h-100">
+                <Card.Img 
+                  variant="top" 
+                  src={related.image} 
+                  style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }} 
+                  onClick={() => handleReplaceSuggestedProduct(index)} 
+                />
+                <Card.Body className="d-flex flex-column justify-content-between">
                   <Card.Title className="fs-6">{related.name}</Card.Title>
-                  <Button variant="outline-primary" size="sm" onClick={() => navigate(`/product/${related.id}`)}>View</Button>
+                  <Button 
+                    variant="outline-primary" 
+                    size="sm" 
+                    onClick={() => navigate(`/product/${related.id}`)}
+                  >
+                    View
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
