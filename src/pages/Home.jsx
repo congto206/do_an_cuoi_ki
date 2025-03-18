@@ -19,7 +19,6 @@ const Home = () => {
 
   const handleCloseWelcome = () => setShowWelcome(false);
 
-  // Filter products based on criteria
   const featuredProducts = products.filter(product => product.rating >= 4.5);
   const bestSellingProducts = products.filter(product => product.stock > 5);
   const discountProducts = products.filter(product => product.price < 700);
@@ -31,13 +30,13 @@ const Home = () => {
     }, []);
   };
 
-  const renderProductCarousel = (title, products) => {
-    const productChunks = chunkArray(products, 4); // Display 4 products per slide
+  const renderProductCarousel = (title, products, autoSlide = false) => {
+    const productChunks = chunkArray(products, 4);
 
     return (
       <Container className="mt-5">
         <h2 className="text-center fw-bold text-black">{title}</h2>
-        <Carousel className="mt-4" interval={3000} controls={true} indicators={false}>
+        <Carousel className="mt-4" interval={autoSlide ? 3000 : null} controls={true} indicators={false} prevIcon={<span className="carousel-control-prev-icon bg-dark" />} nextIcon={<span className="carousel-control-next-icon bg-dark" />}>
           {productChunks.map((chunk, index) => (
             <Carousel.Item key={index}>
               <div className="d-flex justify-content-center">
@@ -49,6 +48,7 @@ const Home = () => {
                     <Card.Body className="text-center">
                       <h5 className="fw-bold text-dark">{product.name}</h5>
                       <p className="text-muted">{product.brand}</p>
+                      <h6 className="text-danger fw-bold">${product.price.toFixed(2)}</h6>
                       <Button 
                         variant="outline-primary" 
                         size="sm" 
@@ -71,8 +71,6 @@ const Home = () => {
   return (
     <>
       <NavbarComponent />
-
-      {/* Welcome Popup */}
       <Modal show={showWelcome} onHide={handleCloseWelcome} centered>
         <Modal.Header closeButton>
           <Modal.Title>Welcome to Our Store!</Modal.Title>
@@ -87,23 +85,17 @@ const Home = () => {
         </Modal.Footer>
       </Modal>
 
-      {/* Banner */}
       <Carousel className="mt-5 pt-4 shadow-lg rounded">
         {["banner.jpg", "banner2.jpg", "banner3.jpg"].map((img, index) => (
           <Carousel.Item key={index}>
-            <div
-              className="banner"
-              style={{ backgroundImage: `url('/images/${img}')` }}
-            ></div>
+            <div className="banner" style={{ backgroundImage: `url('/images/${img}')` }}></div>
           </Carousel.Item>
         ))}
       </Carousel>
 
-      {/* Product Sections */}
-      {renderProductCarousel("🌟 Featured Products 🌟", featuredProducts)}
+      {renderProductCarousel("🌟 Featured Products 🌟", featuredProducts, true)}
       {renderProductCarousel("🔥 Best Selling Products 🔥", bestSellingProducts)}
       {renderProductCarousel("💰 Discounted Products 💰", discountProducts)}
-      
       <style>
               {`
               .banner {
@@ -160,7 +152,6 @@ const Home = () => {
               }
               `}
             </style>
-    
       <Footer />
     </>
   );
