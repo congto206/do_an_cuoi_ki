@@ -294,7 +294,7 @@
       "/images/fun1.3.jpg",
       "/images/fun1.4.jpg"
     ],
-    "price": 4,
+    "price": 234,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
     "category": "split",
@@ -313,7 +313,7 @@
       "/images/fun2.3.jpg",
       "/images/fun2.4.jpg"
     ],
-    "price": 4,
+    "price": 654,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
     "category": "split",
@@ -332,7 +332,7 @@
       "/images/fun3.3.jpg",
       "/images/fun3.4.jpg"
     ],
-    "price": 4,
+    "price": 874,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
     "category": "split",
@@ -351,7 +351,7 @@
       "/images/fun4.3.jpg",
       "/images/fun4.4.jpg"
     ],
-    "price": 4,
+    "price": 465,
     "description": "Integrated antibacterial filter.",
     "stock": 15,
     "category": "split",
@@ -370,7 +370,7 @@
       "/images/to1.3.jpg",
       "/images/to1.4.jpg"
     ],
-    "price": 4,
+    "price": 456,
     "description": "Gentle airflow protects skin with HadaCare. Self-cleaning function.",
     "stock": 15,
     "category": "split",
@@ -389,7 +389,7 @@
       "/images/cas1.3.jpg",
       "/images/cas1.4.jpg"
     ],
-    "price": 4,
+    "price": 454,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "split",
@@ -408,7 +408,7 @@
       "/images/cas2.3.jpg",
       "/images/cas2.4.jpg"
     ],
-    "price": 4,
+    "price": 487,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "split",
@@ -427,7 +427,7 @@
       "/images/amtran7.3.jpg",
       "/images/amtran7.4.jpg"
     ],
-    "price": 4,
+    "price": 454,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -446,7 +446,7 @@
       "/images/amtran8.3.jpg",
       "/images/amtran8.4.jpg"
     ],
-    "price": 4,
+    "price": 442,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -464,7 +464,7 @@
       "/images/amtran9.2.jpg",
       "/images/amtran9.3.jpg"
     ],
-    "price": 4,
+    "price": 487,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -483,7 +483,7 @@
       "/images/amtran10.3.jpg",
       "/images/amtran10.4.jpg"
     ],
-    "price": 4,
+    "price": 476,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -501,7 +501,7 @@
       "/images/amtran11.2.jpg",
       "/images/amtran11.3.jpg"
     ],
-    "price": 4,
+    "price": 443,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -520,7 +520,7 @@
       "/images/amtran12.3.jpg",
       "/images/amtran12.4.jpg"
     ],
-    "price": 4,
+    "price": 1242,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "ceiling",
@@ -539,7 +539,7 @@
       "/images/amtran13.3.jpg",
       "/images/amtran13.4.jpg"
     ],
-    "price": 4,
+    "price": 432,
     "description": "Dual safety protection mechanism with intelligent leak detection",
     "stock": 15,
     "category": "ceiling",
@@ -556,7 +556,7 @@
       "/images/amtran15.1.jpg",
       "/images/amtran15.2.jpg"
     ],
-    "price": 4,
+    "price": 234,
     "description": "Dual safety protection mechanism with intelligent leak detection",
     "stock": 15,
     "category": "ceiling",
@@ -1123,7 +1123,7 @@
       "/images/amtran10.3.jpg",
       "/images/amtran10.4.jpg"
     ],
-    "price": 4,
+    "price": 443,
     "description": "Dual safety protection with smart leakage detection.",
     "stock": 15,
     "category": "best",
@@ -1140,7 +1140,7 @@
       "/images/amtran15.1.jpg",
       "/images/amtran15.2.jpg"
     ],
-    "price": 4,
+    "price": 456,
     "description": "Dual safety protection mechanism with intelligent leak detection",
     "stock": 15,
     "category": "best",
