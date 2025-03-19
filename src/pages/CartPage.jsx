@@ -132,20 +132,22 @@ const CartPage = () => {
 
       {/* Modal xác nhận xóa */}
       <Modal show={showConfirm} onHide={() => setShowConfirm(false)} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Confirm Deletion</Modal.Title>
+        <Modal.Header closeButton className="border-0 modal-header-custom">
+          <Modal.Title className="text-white fw-bold">Confirm Removal</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          Are you sure you want to remove <strong>{selectedItem?.name}</strong> from your cart?
+        <Modal.Body className="text-center modal-body-custom">
+          <p className="mb-4 text-light">
+            Are you sure you want to remove <strong className="text-white">{selectedItem?.name}</strong> from your cart?
+          </p>
+          <div className="d-flex justify-content-center gap-3">
+            <Button variant="light" className="btn-cancel" onClick={() => setShowConfirm(false)}>
+              Cancel
+            </Button>
+            <Button variant="dark" className="btn-remove" onClick={handleConfirmRemove}>
+              Remove
+            </Button>
+          </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowConfirm(false)}>
-            Cancel
-          </Button>
-          <Button variant="danger" onClick={handleConfirmRemove}>
-            Remove
-          </Button>
-        </Modal.Footer>
       </Modal>
 
       {/* CSS */}
@@ -219,6 +221,59 @@ const CartPage = () => {
           background-color: #e63946;
           transform: scale(0.95);
         }
+          /* Modal Custom */
+            .modal-content {
+              border-radius: 12px;
+              background: #222; /* Nền xám đậm */
+              color: #fff;
+              border: 1px solid #444;
+            }
+
+            /* Header */
+            .modal-header-custom {
+              background: #111;
+              border-bottom: 1px solid #444;
+            }
+
+            /* Body */
+            .modal-body-custom {
+              font-size: 16px;
+              background: #222;
+            }
+
+            /* Nút */
+            .btn-cancel {
+              background: #f8f9fa;
+              color: #222;
+              border: 1px solid #ccc;
+              padding: 8px 20px;
+              font-weight: bold;
+              transition: 0.3s ease-in-out;
+            }
+
+            .btn-remove {
+              background: #000;
+              color: #fff;
+              border: 1px solid #666;
+              padding: 8px 20px;
+              font-weight: bold;
+              transition: 0.3s ease-in-out;
+            }
+
+            .btn-cancel:hover {
+              background: #e0e0e0;
+            }
+
+            .btn-remove:hover {
+              background: #333;
+            }
+
+            /* Hiệu ứng mờ nền modal */
+            .modal-backdrop {
+              background: rgba(0, 0, 0, 0.6);
+            }
+
+
         `}
       </style>
     </>
