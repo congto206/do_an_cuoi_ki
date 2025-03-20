@@ -1,103 +1,86 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import NavbarComponent from "../components/NavbarComponent";
+import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
+import { FaEnvelope, FaLock } from "react-icons/fa";
 import Footer from "../components/Footer";
+import NavbarComponent from "../components/NavbarComponent";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState({});
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    let newErrors = {};
-
-    if (!email.trim()) newErrors.email = "Please enter your email!";
-    if (!password.trim()) newErrors.password = "Please enter your password!";
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-    } else {
-      console.log("Logged in successfully!");
-      // Xử lý đăng nhập ở đây
-    }
+    console.log("Email:", email, "Password:", password);
   };
 
   return (
     <>
-      <NavbarComponent />
-      <div className="auth-container">
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              className={`form-control ${errors.email ? "error-input" : ""}`}
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            {errors.email && <small className="error-text">{errors.email}</small>}
-          </div>
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              className={`form-control ${errors.password ? "error-input" : ""}`}
-              placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            {errors.password && <small className="error-text">{errors.password}</small>}
-          </div>
-          <button type="submit" className="btn btn-primary btn-block">Login</button>
-        </form>
-        <p className="text-center">
-          Don't have an account? <Link to="/register">Register here</Link>
-        </p>
+      <NavbarComponent /> {/* Thêm navbar vào đây */}
+      <div className="login-container d-flex align-items-center justify-content-center">
+        <Container fluid>
+          <Row className="vh-100 align-items-center justify-content-center">
+            <Col md={8} className="shadow-lg rounded-4 overflow-hidden login-box d-flex">
+              {/* Logo */}
+              <div className="logo-container d-flex align-items-center justify-content-center bg-dark w-50">
+                <img src="/images/logo.jpg" alt="Logo" className="img-fluid" style={{ maxWidth: "280px" }} />
+              </div>
+
+              {/* Form đăng nhập */}
+              <div className="p-5 w-50">
+                <h2 className="fw-bold text-center mb-4">Login</h2>
+                <Form onSubmit={handleLogin}>
+                  {/* Email */}
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <InputGroup>
+                      <InputGroup.Text>
+                        <FaEnvelope />
+                      </InputGroup.Text>
+                      <Form.Control
+                        type="email"
+                        placeholder="Enter email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        style={{ height: "60px", fontSize: "1.2rem" }}
+                      />
+                    </InputGroup>
+                  </Form.Group>
+
+                  {/* Password */}
+                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <InputGroup>
+                      <InputGroup.Text>
+                        <FaLock />
+                      </InputGroup.Text>
+                      <Form.Control
+                        type="password"
+                        placeholder="Enter password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                        style={{ height: "60px", fontSize: "1.2rem" }}
+                      />
+                    </InputGroup>
+                  </Form.Group>
+
+                  {/* Forgot password */}
+                  <div className="d-flex justify-content-between align-items-center mb-3">
+                    <a href="#" className="text-decoration-none text-primary">Forgot password?</a>
+                  </div>
+
+                  {/* Login button */}
+                  <Button variant="dark" type="submit" className="w-100 py-3 fw-bold">
+                    Login
+                  </Button>
+                </Form>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <Footer />
-
-      <style>
-        {`
-        .auth-container {
-          max-width: 400px;
-          margin: 50px auto;
-          padding: 20px;
-          background: white;
-          border-radius: 8px;
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
-
-        .form-group {
-          margin-bottom: 15px;
-          text-align: left;
-        }
-
-        .form-control {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-        }
-
-        .error-input {
-          border: 2px solid red;
-        }
-
-        .error-text {
-          color: red;
-          font-size: 14px;
-        }
-
-        .btn-block {
-          width: 100%;
-          padding: 10px;
-          margin-top: 10px;
-        }
-        `}
-      </style>
     </>
   );
 };
