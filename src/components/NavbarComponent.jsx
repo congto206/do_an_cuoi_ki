@@ -88,6 +88,9 @@ const NavbarComponent = () => {
             <Nav.Link as={Link} to="/cart" className="cart-link">
               🛒 Cart {cartCount > 0 && <Badge bg="danger">{cartCount}</Badge>}
             </Nav.Link>
+            
+            {/* Login and Register Links */}
+            <Nav.Link as={Link} to="/login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
