@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from "react";
-import { Container, Button, Card, ListGroup, Row, Col, Image } from "react-bootstrap";
+import { Container, Button, Card, ListGroup, Row, Col, Image, Table } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import NavbarComponent from "../components/NavbarComponent";
@@ -106,9 +105,30 @@ const ProductDetail = () => {
           </Col>
         </Row>
 
+        {/* Thêm Bảng Thông Tin Chi Tiết */}
+        <Card className="mt-4">
+          <Card.Body>
+            <Card.Title className="fw-bold"> Product Specifications</Card.Title>
+            <Table striped bordered hover responsive className="mt-2">
+              <tbody>
+              <tr><td>🔹 <strong>Type:</strong></td><td>1-way (cooling only)</td></tr>
+              <tr><td>🔹 <strong>Inverter:</strong></td><td>Yes, Inverter</td></tr>
+              <tr><td>🔹 <strong>Cooling Power:</strong></td><td>1.5 HP - 12,300 BTU</td></tr>
+              <tr><td>🔹 <strong>Room Size:</strong></td><td>15 - 20m² (40 - 60m³)</td></tr>
+              <tr><td>🔹 <strong>Noise Level:</strong></td><td>Indoor: 20/37 dB, Outdoor: 40/47 dB</td></tr>
+              <tr><td>🔹 <strong>Manufacturing Year:</strong></td><td>2024</td></tr>
+              <tr><td>🔹 <strong>Made in:</strong></td><td>Vietnam</td></tr>
+              <tr><td>🔹 <strong>Warranty:</strong></td><td>1 year (Indoor) / 5 years (Compressor)</td></tr>
+              <tr><td>🔹 <strong>Heat Exchanger Material:</strong></td><td>Copper tubing, Aluminum fins</td></tr>
+              <tr><td>🔹 <strong>Refrigerant Type:</strong></td><td>R-32</td></tr>
+              </tbody>
+            </Table>
+          </Card.Body>
+        </Card>
+
         {/* Danh sách sản phẩm đề xuất */}
         <h4 className="mt-5">Related Products</h4>
-        <Row className="g-4">  {/* Tạo khoảng cách giữa các card */}
+        <Row className="g-4">  
             {suggestedProducts.map((related, index) => (
               <Col key={related.id} xs={6} md={3}>
                 <Card className="shadow-sm border-0 h-100 d-flex flex-column align-items-center text-center">
@@ -130,7 +150,7 @@ const ProductDetail = () => {
                 </Card>
               </Col>
             ))}
-          </Row>
+        </Row>
       </Container>
       <Footer />
     </>
