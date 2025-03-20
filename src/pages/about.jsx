@@ -16,8 +16,8 @@ const About = () => {
 
       {/* About Us */}
       <Container className="py-5">
-        <Row className="align-items-center">
-          <Col md={6} className="text-center">
+        <Row className="align-items-center d-flex">
+          <Col md={6} className="text-center d-flex justify-content-center">
             <Image 
               src="/images/banner1.jpg" 
               alt="Air Conditioning Products" 
@@ -25,8 +25,10 @@ const About = () => {
               className="rounded shadow-sm"
             />
           </Col>
-          <Col md={6}>
-            <h2 className="fw-bold text-primary">About Us</h2>
+          <Col md={6} className="text-start">
+            <h2 className="fw-bold text-primary">
+              Discover Our Commitment to Excellence and Customer Satisfaction in Air Conditioning Solutions with Innovative Technology and Exceptional Service to Enhance Your Comfort and Quality of Life. Our dedication to innovation, reliability, and customer-first approach ensures you receive the best air conditioning solutions tailored to your specific needs, providing unmatched efficiency and convenience for both residential and commercial spaces.
+            </h2>
             <p className="text-muted">
               We are a leading company specializing in providing and installing high-quality air conditioners.
               With years of experience, we are committed to delivering genuine products, professional services,
@@ -84,3 +86,4 @@ const About = () => {
 };
 
 export default About;
+
