@@ -108,19 +108,21 @@ const ProductDetail = () => {
 
         {/* Danh sách sản phẩm đề xuất */}
         <h4 className="mt-5">Related Products</h4>
-        <Row>
+        <Row className="g-4">  {/* Tạo khoảng cách giữa các card */}
             {suggestedProducts.map((related, index) => (
-              <Col key={related.id} xs={6} md={3} className="text-center">
-                <Card className="shadow-sm border-0">
-                  <Card.Img 
-                    variant="top" 
-                    src={related.image} 
-                    style={{ maxHeight: "150px", objectFit: "contain", cursor: "pointer" }} 
-                    onClick={() => handleReplaceSuggestedProduct(index)} 
-                  />
-                  <Card.Body>
-                    <Card.Title className="fs-6">{related.name}</Card.Title>
-                    <Card.Text className="text-success fw-bold">{related.price} $</Card.Text>  {/* Hiển thị giá */}
+              <Col key={related.id} xs={6} md={3}>
+                <Card className="shadow-sm border-0 h-100 d-flex flex-column align-items-center text-center">
+                  <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
+                    <Card.Img 
+                      variant="top" 
+                      src={related.image} 
+                      style={{ width: "100%", height: "100%", objectFit: "cover", cursor: "pointer" }} 
+                      onClick={() => handleReplaceSuggestedProduct(index)} 
+                    />
+                  </div>
+                  <Card.Body className="d-flex flex-column justify-content-between w-100">
+                    <Card.Title className="fs-6 text-truncate">{related.name}</Card.Title>
+                    <Card.Text className="text-success fw-bold">{related.price} $</Card.Text> 
                     <Button variant="outline-primary" size="sm" onClick={() => navigate(`/product/${related.id}`)}>
                       View
                     </Button>
