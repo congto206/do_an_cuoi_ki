@@ -7,7 +7,7 @@ import { CartProvider } from "./context/CartContext";
 import CeilingAC from "./pages/CeilingAC";  // Điều hòa âm trần
 import SplitAC from "./pages/SplitAC";      // Điều hòa treo tường
 import WindowAC from "./pages/WindowAC";    // Điều hòa cửa sổ
-import BestsellingAC from "./pages/bestselling"; 
+import BestsellingAC from "./pages/BestsellingAC"; 
 import ContactPage from "./pages/ContactPage"; // Trang liên hệ
 import About from "./pages/about"; // Trang giới thiệu
 import Checkout from "./pages/Checkout"; // Trang thanh toán
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/products/split" element={<SplitAC />} />
           <Route path="/products/ceiling" element={<CeilingAC />} />
           <Route path="/products/window" element={<WindowAC />} />
-          <Route path="/products/bestselling" element={<BestsellingAC />} />
+          <Route path="/products/best" element={<BestsellingAC />} />
           {/* Trang liên hệ */}
           <Route path="/contact" element={<ContactPage />} />
           {/* Trang Giới thiệu */}
