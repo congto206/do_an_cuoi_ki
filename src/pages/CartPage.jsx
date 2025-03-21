@@ -201,7 +201,7 @@ const CartPage = () => {
         }
 
         .remove-btn {
-          background-color: #ff6b6b;
+          background-color:rgb(9, 9, 9);
           border: none;
           color: white;
           font-size: 16px;
@@ -214,12 +214,12 @@ const CartPage = () => {
         }
 
         .remove-btn:hover {
-          background-color: #ff5252;
+          background-color:rgb(18, 16, 16);
           transform: scale(1.05);
         }
 
         .remove-btn:active {
-          background-color: #e63946;
+          background-color:rgb(20, 20, 20);
           transform: scale(0.95);
         }
           /* Modal Custom */
