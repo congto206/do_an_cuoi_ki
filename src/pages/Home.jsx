@@ -98,58 +98,64 @@ const Home = () => {
       {renderProductCarousel("💰 Discounted Products 💰", discountProducts)}
       <style>
               {`
-              .banner {
-                height: 400px;
-                background-size: cover;
-                background-position: center;
-                border-radius: 12px;
-                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-              }
-              .product-slider {
-                display: flex;
-                overflow-x: hidden;
-                gap: 20px;
-                padding-bottom: 10px;
-                scrollbar-width: none;
-                white-space: nowrap;
-                scroll-behavior: smooth;
-              }
-              .product-slider::-webkit-scrollbar {
-                display: none;
-              }
-              .product-card-container {
-                min-width: 250px;
-                flex-shrink: 0;
-              }
-              .product-card {
-                border-radius: 12px;
-                overflow: hidden;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                background: white;
-              }
-              .product-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
-              }
-              .product-img-container {
-                height: 200px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #f8f9fa;
-                border-bottom: 1px solid #ddd;
-              }
-              .product-image {
-                max-height: 180px;
-                object-fit: contain;
-              }
-              .view-details-btn {
-                transition: all 0.3s ease;
-              }
-              .view-details-btn:hover {
-                background-color: #007bff;
-                color: white;
-              }
+                <style>
+                  .banner {
+                    height: 400px;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 12px;
+                    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+                  }
+                  .product-slider {
+                    display: flex;
+                    overflow-x: hidden;
+                    gap: 20px;
+                    padding-bottom: 10px;
+                    scrollbar-width: none;
+                    white-space: nowrap;
+                    scroll-behavior: smooth;
+                  }
+                  .product-slider::-webkit-scrollbar {
+                    display: none;
+                  }
+                  .product-card-container {
+                    min-width: 250px;
+                    flex-shrink: 0;
+                  }
+                  .product-card {
+                    border-radius: 12px;
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    background: white;
+                  }
+                  .product-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+                  }
+                  .product-img-container {
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f8f9fa;
+                    border-bottom: 1px solid #ddd;
+                  }
+                  .product-image {
+                    max-height: 180px;
+                    object-fit: contain;
+                  }
+                .view-details-btn {
+                  color: black !important;
+                  border-color: black !important;
+                  transition: all 0.3s ease;
+                }
+
+                .view-details-btn:hover {
+                  background-color: black !important;
+                  color: white !important;
+                  border-color: black !important;
+                }
+                </style>
               `}
             </style>
       <Footer />

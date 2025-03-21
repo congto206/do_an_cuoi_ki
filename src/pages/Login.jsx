@@ -67,9 +67,8 @@ const Login = () => {
 
                   {/* Forgot password */}
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                    <a href="#" className="text-decoration-none text-primary">Forgot password?</a>
+                  <a href="#" className="text-decoration-none text-dark fw-bold">Forgot password?</a>
                   </div>
-
                   {/* Login button */}
                   <Button variant="dark" type="submit" className="w-100 py-3 fw-bold">
                     Login

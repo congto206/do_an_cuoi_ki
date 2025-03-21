@@ -193,8 +193,6 @@ const SplitAC= () => {
                     transform: scale(1.2);
                     box-shadow: 0px 6px 15px rgba(0, 91, 187, 0.5);
                 }
-                    
-
                 `}
             </style>
             <Footer />

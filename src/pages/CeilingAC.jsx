@@ -97,7 +97,7 @@ const CeilingAC  = () => {
 
             <style>
                 {`
-                .product-card {
+                                .product-card {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
@@ -160,14 +160,14 @@ const CeilingAC  = () => {
 
                 /* Nút "Buy" */
                 .btn-animate.btn-success {
-                    background: rgb(40, 41, 40)
-                    border: 2px solid rgb(40, 41, 40);
+                    background:rgb(40, 41, 40);
+                    border: 2px solidrgb(24, 26, 25);
                     color: white;
                 }
 
                 .btn-animate.btn-success:hover {
-                    background: rgb(40, 41, 40);
-                    border-color: rgb(40, 41, 40);
+                    background:rgb(40, 41, 40);
+                    border-color:rgb(40, 41, 40);
                     transform: scale(1.08);
                     box-shadow: 0px 4px 12px rgb(40, 41, 40);
                 }
@@ -193,8 +193,6 @@ const CeilingAC  = () => {
                     transform: scale(1.2);
                     box-shadow: 0px 6px 15px rgba(0, 91, 187, 0.5);
                 }
-                    
-
                 `}
             </style>
             <Footer />
