@@ -35,7 +35,8 @@ const CartPage = () => {
       <NavbarComponent />
 
       <Container className="mt-5">
-        <h2 className="text-center fw-bold text-primary">🛒 Your Shopping Cart</h2>
+      <h2 className="text-center fw-bold text-dark">🛒 Your Shopping Cart</h2>
+
 
         {cart.length === 0 ? (
           <Alert variant="warning" className="text-center mt-4">
@@ -115,7 +116,7 @@ const CartPage = () => {
                   </p>
                   <h5 className="fw-bold text-success">Total: ${totalPrice.toFixed(2)}</h5>
                   <Button
-                    variant="success"
+                    variant="dark"
                     className="w-100 mt-3 checkout-btn"
                     onClick={() => navigate("/checkout")}
                   >
