@@ -100,7 +100,8 @@ const ProductDetail = () => {
             </ListGroup>
             <div className="d-flex gap-3">
               <Button variant="outline-dark" onClick={() => navigate("/products")}>⬅️ Back</Button>
-              <Button variant="success" onClick={handleBuyNow}>🛒 Add To Cart</Button>
+              <Button variant="dark" onClick={handleBuyNow}>🛒 Add To Cart</Button>
+
             </div>
           </Col>
         </Row>
@@ -143,7 +144,7 @@ const ProductDetail = () => {
                   <Card.Body className="d-flex flex-column justify-content-between w-100">
                     <Card.Title className="fs-6 text-truncate">{related.name}</Card.Title>
                     <Card.Text className="text-success fw-bold">{related.price} $</Card.Text> 
-                    <Button variant="outline-primary" size="sm" onClick={() => navigate(`/product/${related.id}`)}>
+                    <Button variant="dark" size="sm" onClick={() => navigate(`/product/${related.id}`)}>
                       View
                     </Button>
                   </Card.Body>

@@ -33,10 +33,10 @@ const NavbarComponent = () => {
               to="/products"
               className={location.pathname === "/products" ? "active-link home-active" : ""}
             >
-              Home
+              Products
             </Nav.Link>
 
-            <NavDropdown title="Products" id="basic-nav-dropdown">
+            <NavDropdown title="Menu" id="basic-nav-dropdown">
               <NavDropdown.Item
                 as={Link}
                 to="/products"

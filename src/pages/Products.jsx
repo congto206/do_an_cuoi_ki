@@ -39,7 +39,7 @@ const ProductSection = ({ title, category }) => {
                 <Card.Title className="text-dark fw-bold">{product.name}</Card.Title>
                 <Card.Text className="text-danger fs-4 fw-bold">${product.price}</Card.Text>
                 <div className="mt-auto">
-                  <Button variant="outline-primary" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
+                  <Button variant="dark" className="m-2 btn-custom" onClick={() => navigate(`/product/${product.id}`)}>
                     🔍 Details
                   </Button>
                 </div>
@@ -63,7 +63,7 @@ const Products = () => {
       <NavbarComponent />
       <div className="products-container">
         <div className="sidebar">
-          <h4 className="text-center text-black fw-bold py-3"> Product catalog</h4>
+          <h4 className="text-center text-black fw-bold py-3"> Product Catalog</h4>
           <ListGroup variant="flush">
             {categories.map(({ key, title }) => (
               <ListGroup.Item key={key} action className="sidebar-item" onClick={() => document.getElementById(key).scrollIntoView({ behavior: "smooth" })}>

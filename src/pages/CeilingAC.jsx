@@ -145,8 +145,8 @@ const CeilingAC  = () => {
 
                 /* Nút "Details" */
                 .btn-animate.btn-outline-primary {
-                    border: 2px solid #007bff;
-                    color: #007bff;
+                    border: 2px solid rgb(40, 41, 40);
+                    color: rgb(40, 41, 40);
                     background: white;
                 }
 
@@ -160,16 +160,16 @@ const CeilingAC  = () => {
 
                 /* Nút "Buy" */
                 .btn-animate.btn-success {
-                    background: #28a745;
-                    border: 2px solid #28a745;
+                    background: rgb(40, 41, 40)
+                    border: 2px solid rgb(40, 41, 40);
                     color: white;
                 }
 
                 .btn-animate.btn-success:hover {
-                    background: #218838;
-                    border-color: #1e7e34;
+                    background: rgb(40, 41, 40);
+                    border-color: rgb(40, 41, 40);
                     transform: scale(1.08);
-                    box-shadow: 0px 4px 12px rgba(40, 167, 69, 0.4);
+                    box-shadow: 0px 4px 12px rgb(40, 41, 40);
                 }
 
 
