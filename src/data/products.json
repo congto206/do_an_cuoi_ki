@@ -1057,22 +1057,22 @@
   },
   {
     "id": 61,
-    "name": "Mitsubishi Electric 2 HP",
-    "brand": "LG",
-    "image": "/images/sanphamamtuong3.jpg",
+"name": "Máy lạnh Casper Inverter 1.5 HP GC-12IB36",
+    "brand": "Casper",
+    "image": "/images/casper2.jpg",
     "extraImages": [
-      "/images/dai1.1.jpg",
-      "/images/dai1.2.jpg",
-      "/images/dai1.3.jpg",
-      "/images/dai1.4.jpg"
+      "/images/cas2.1.jpg",
+      "/images/cas2.2.jpg",
+      "/images/cas2.3.jpg",
+      "/images/cas2.4.jpg"
     ],
-    "price": 1233,
-    "description": "Compact design, fast cooling.",
-    "stock": 4.5,
-    "category": "best",
-    "rating": 5,
+    "price": 487,
+    "description": "Dual safety protection with smart leakage detection.",
+    "stock": 15,
+    "category": "split",
+    "rating": 4.8,
     "warranty": "2 years",
-    "power_consumption": "1600W"
+    "power_consumption": "1.5 HP - 12,000 BTU"
   },
   {
     "id": 62,
