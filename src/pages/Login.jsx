@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import Footer from "../components/Footer";
 import NavbarComponent from "../components/NavbarComponent";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -67,7 +68,9 @@ const Login = () => {
 
                   {/* Forgot password */}
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                  <a href="#" className="text-decoration-none text-dark fw-bold">Forgot password?</a>
+                  <Link to="/forgot-password" className="text-decoration-none text-dark fw-bold">
+                    Forgot password?
+                  </Link>
                   </div>
                   {/* Login button */}
                   <Button variant="dark" type="submit" className="w-100 py-3 fw-bold">
